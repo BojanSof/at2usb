@@ -107,7 +107,7 @@ EVENT_EP0_REQUEST 3
 EVENT_ATTACH 4
 EVENT_TRANSFER_TERMINATED 5
 ]
-"327 D:\Personal\at-usb-keyboard\AT2USB\at2usbClassic.X\app_device_keyboard.c
+"386 D:\Personal\at-usb-keyboard\AT2USB\at2usbClassic.X\app_device_keyboard.c
 [e E465 . `uc
 DETACHED_STATE 0
 ATTACHED_STATE 1
@@ -129,14 +129,14 @@ KeyboardStop 4
 [v _APP_KeyboardInit APP_KeyboardInit `(v  1 e 1 0 ]
 "319
 [v _APP_KeyboardTasks APP_KeyboardTasks `(v  1 e 1 0 ]
-"487
+"488
 [v _APP_KeyboardProcessOutputReport APP_KeyboardProcessOutputReport `(v  1 s 1 APP_KeyboardProcessOutputReport ]
 [v i1_APP_KeyboardProcessOutputReport APP_KeyboardProcessOutputReport `(v  1 s 1 i1_APP_KeyboardProcessOutputReport ]
-"495
+"496
 [v _USBHIDCBSetReportComplete USBHIDCBSetReportComplete `(v  1 s 1 USBHIDCBSetReportComplete ]
-"504
+"505
 [v _USBHIDCBSetReportHandler USBHIDCBSetReportHandler `(v  1 e 1 0 ]
-"515
+"516
 [v _USBHIDCBSetIdleRateHandler USBHIDCBSetIdleRateHandler `(v  1 e 1 0 ]
 "5 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awmod.c
 [v ___awmod __awmod `(i  1 e 2 0 ]
@@ -268,9 +268,9 @@ KeyboardStop 4
 "44
 [v _PS2Keyboard_GetScanCode PS2Keyboard_GetScanCode `(a  1 e 1 0 ]
 "57
-[v _PS2KeyboardDataInterrupt PS2KeyboardDataInterrupt `(v  1 s 1 PS2KeyboardDataInterrupt ]
-"63
-[v _PS2KeyboardClockInterrupt PS2KeyboardClockInterrupt `(v  1 s 1 PS2KeyboardClockInterrupt ]
+[v _PS2Keyboard_DataInterrupt PS2Keyboard_DataInterrupt `(v  1 s 1 PS2Keyboard_DataInterrupt ]
+"64
+[v _PS2Keyboard_ClockInterrupt PS2Keyboard_ClockInterrupt `(v  1 s 1 PS2Keyboard_ClockInterrupt ]
 "396 D:\Personal\at-usb-keyboard\AT2USB\at2usbClassic.X\ps2usb.c
 [v _PS2USB_ScanCodeToUSBHID PS2USB_ScanCodeToUSBHID `(uc  1 e 1 0 ]
 "9 D:\Personal\at-usb-keyboard\AT2USB\at2usbClassic.X\queue.c
@@ -1282,13 +1282,13 @@ KeyboardStop 4
 {
 [s S2604 PS2ScanCode 3 `uc 1 value 1 0 `a 1 isExtend 1 1 `a 1 isBreak 1 2 ]
 [v APP_KeyboardTasks@scanCode scanCode `*.5DCS2604  1 a 1 wreg ]
-"423
+"374
 [v APP_KeyboardTasks@usbHidCode_2878 usbHidCode `uc  1 a 1 39 ]
-"409
+"360
 [v APP_KeyboardTasks@usbHidCode_2877 usbHidCode `uc  1 a 1 36 ]
-"391
+"342
 [v APP_KeyboardTasks@usbHidCode_2876 usbHidCode `uc  1 a 1 38 ]
-"382
+"333
 [v APP_KeyboardTasks@usbHidCode usbHidCode `uc  1 a 1 35 ]
 "320
 [v APP_KeyboardTasks@TimeDeltaMilliseconds TimeDeltaMilliseconds `i  1 a 2 40 ]
@@ -1298,10 +1298,10 @@ KeyboardStop 4
 [v APP_KeyboardTasks@needToSendNewReportPacket needToSendNewReportPacket `a  1 a 1 37 ]
 "319
 [v APP_KeyboardTasks@scanCode scanCode `*.5DCS2604  1 a 1 wreg ]
-"327
+"325
 "319
 [v APP_KeyboardTasks@scanCode scanCode `*.5DCS2604  1 a 1 43 ]
-"485
+"486
 } 0
 "3 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\memset.c
 [v _memset memset `(*.39v  1 e 2 0 ]
@@ -1484,10 +1484,10 @@ KeyboardStop 4
 [v GenericQueue_IsEmpty@q q `*.39S2656  1 p 2 0 ]
 "13
 } 0
-"487 D:\Personal\at-usb-keyboard\AT2USB\at2usbClassic.X\app_device_keyboard.c
+"488 D:\Personal\at-usb-keyboard\AT2USB\at2usbClassic.X\app_device_keyboard.c
 [v _APP_KeyboardProcessOutputReport APP_KeyboardProcessOutputReport `(v  1 s 1 APP_KeyboardProcessOutputReport ]
 {
-"493
+"494
 } 0
 "52 D:\Personal\at-usb-keyboard\AT2USB\at2usbClassic.X\mcc_generated_files/interrupt_manager.c
 [v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `II(v  1 e 1 0 ]
@@ -1670,20 +1670,20 @@ KeyboardStop 4
 {
 "249
 } 0
-"504 D:\Personal\at-usb-keyboard\AT2USB\at2usbClassic.X\app_device_keyboard.c
+"505 D:\Personal\at-usb-keyboard\AT2USB\at2usbClassic.X\app_device_keyboard.c
 [v _USBHIDCBSetReportHandler USBHIDCBSetReportHandler `(v  1 e 1 0 ]
 {
-"509
+"510
 } 0
-"515
+"516
 [v _USBHIDCBSetIdleRateHandler USBHIDCBSetIdleRateHandler `(v  1 e 1 0 ]
 {
 [v USBHIDCBSetIdleRateHandler@reportID reportID `uc  1 a 1 wreg ]
 [v USBHIDCBSetIdleRateHandler@reportID reportID `uc  1 a 1 wreg ]
 [v USBHIDCBSetIdleRateHandler@newIdleRate newIdleRate `uc  1 p 1 0 ]
-"519
+"520
 [v USBHIDCBSetIdleRateHandler@reportID reportID `uc  1 a 1 3 ]
-"522
+"523
 } 0
 "295
 [v _APP_KeyboardInit APP_KeyboardInit `(v  1 e 1 0 ]
@@ -1817,15 +1817,15 @@ KeyboardStop 4
 [v USBCtrlTrfInHandler@lastDTS lastDTS `uc  1 a 1 7 ]
 "2674
 } 0
-"495 D:\Personal\at-usb-keyboard\AT2USB\at2usbClassic.X\app_device_keyboard.c
+"496 D:\Personal\at-usb-keyboard\AT2USB\at2usbClassic.X\app_device_keyboard.c
 [v _USBHIDCBSetReportComplete USBHIDCBSetReportComplete `(v  1 s 1 USBHIDCBSetReportComplete ]
 {
-"502
+"503
 } 0
-"487
+"488
 [v i1_APP_KeyboardProcessOutputReport APP_KeyboardProcessOutputReport `(v  1 s 1 i1_APP_KeyboardProcessOutputReport ]
 {
-"493
+"494
 } 0
 "1775 D:\Personal\at-usb-keyboard\AT2USB\at2usbClassic.X\usb/usb_device.c
 [v _USBCtrlTrfTxService USBCtrlTrfTxService `(v  1 s 1 USBCtrlTrfTxService ]
@@ -1865,9 +1865,9 @@ KeyboardStop 4
 "193
 } 0
 "57 D:\Personal\at-usb-keyboard\AT2USB\at2usbClassic.X\ps2_keyboard.c
-[v _PS2KeyboardDataInterrupt PS2KeyboardDataInterrupt `(v  1 s 1 PS2KeyboardDataInterrupt ]
+[v _PS2Keyboard_DataInterrupt PS2Keyboard_DataInterrupt `(v  1 s 1 PS2Keyboard_DataInterrupt ]
 {
-"61
+"62
 } 0
 "138 D:\Personal\at-usb-keyboard\AT2USB\at2usbClassic.X\mcc_generated_files/pin_manager.c
 [v _IOCAF4_ISR IOCAF4_ISR `(v  1 e 1 0 ]
@@ -1879,10 +1879,10 @@ KeyboardStop 4
 {
 "163
 } 0
-"63 D:\Personal\at-usb-keyboard\AT2USB\at2usbClassic.X\ps2_keyboard.c
-[v _PS2KeyboardClockInterrupt PS2KeyboardClockInterrupt `(v  1 s 1 PS2KeyboardClockInterrupt ]
+"64 D:\Personal\at-usb-keyboard\AT2USB\at2usbClassic.X\ps2_keyboard.c
+[v _PS2Keyboard_ClockInterrupt PS2Keyboard_ClockInterrupt `(v  1 s 1 PS2Keyboard_ClockInterrupt ]
 {
-"112
+"113
 } 0
 "19 D:\Personal\at-usb-keyboard\AT2USB\at2usbClassic.X\generic_queue.c
 [v i1_GenericQueue_Enqueue GenericQueue_Enqueue `(v  1 e 1 0 ]

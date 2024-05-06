@@ -320,6 +320,65 @@ void APP_KeyboardTasks(const PS2ScanCode* scanCode) {
     signed int TimeDeltaMilliseconds;
     unsigned char i;
     bool needToSendNewReportPacket;
+    
+    // update keyboard state
+    if (scanCode != NULL && scanCode->value != 0x00) {
+        if (scanCode->isExtend) {
+            if (scanCode->isBreak) {
+                if (scanCode->value == PS2_KC_CTRL) {
+                    keyboard.modifiers.bits.rightControl = 0;
+                } else if (scanCode->value == PS2_KC_ALT) {
+                    keyboard.modifiers.bits.rightAlt = 0;
+                } else {
+                    uint8_t usbHidCode = PS2USB_ScanCodeToUSBHID(scanCode);
+                    GenericQueue_Remove(&keyboard.keys, &usbHidCode);
+                }
+            } else {
+                if (scanCode->value == PS2_KC_CTRL) {
+                    keyboard.modifiers.bits.rightControl = 1;
+                } else if (scanCode->value == PS2_KC_ALT) {
+                    keyboard.modifiers.bits.rightAlt = 1;
+                } else {
+                    uint8_t usbHidCode = PS2USB_ScanCodeToUSBHID(scanCode);
+                    if (!GenericQueue_Contains(&keyboard.keys, &usbHidCode)) {
+                        GenericQueue_Enqueue(&keyboard.keys, &usbHidCode);
+                    }
+                }
+            }
+        } else {
+            if (scanCode->isBreak) {
+                // break code detected, remove from pressed keys
+                if (scanCode->value == PS2_KC_L_SHIFT) {
+                    keyboard.modifiers.bits.leftShift = 0;
+                } else if (scanCode->value == PS2_KC_CTRL) {
+                    keyboard.modifiers.bits.leftControl = 0;
+                } else if (scanCode->value == PS2_KC_ALT) {
+                    keyboard.modifiers.bits.leftAlt = 0;
+                } else if (scanCode->value == PS2_KC_R_SHIFT) {
+                    keyboard.modifiers.bits.rightShift = 0;
+                } else {
+                    uint8_t usbHidCode = PS2USB_ScanCodeToUSBHID(scanCode);
+                    GenericQueue_Remove(&keyboard.keys, &usbHidCode);
+                }
+            } else {
+                // new code detected, add to pressed keys
+                if (scanCode->value == PS2_KC_L_SHIFT) {
+                    keyboard.modifiers.bits.leftShift = 1;
+                } else if (scanCode->value == PS2_KC_CTRL) {
+                    keyboard.modifiers.bits.leftControl = 1;
+                } else if (scanCode->value == PS2_KC_ALT) {
+                    keyboard.modifiers.bits.leftAlt = 1;
+                } else if (scanCode->value == PS2_KC_R_SHIFT) {
+                    keyboard.modifiers.bits.rightShift = 1;
+                } else {
+                    uint8_t usbHidCode = PS2USB_ScanCodeToUSBHID(scanCode);
+                    if (!GenericQueue_Contains(&keyboard.keys, &usbHidCode)) {
+                        GenericQueue_Enqueue(&keyboard.keys, &usbHidCode);
+                    }
+                }
+            }
+        }
+    }
 
     /* If the USB device isn't configured yet, we can't really do anything
      * else since we don't have a host to talk to.  So jump back to the
@@ -370,64 +429,6 @@ void APP_KeyboardTasks(const PS2ScanCode* scanCode) {
     /* Check if the IN endpoint is busy, and if it isn't check if we want to send
      * keystroke data to the host. */
     if (HIDTxHandleBusy(keyboard.lastINTransmission) == false) {
-        // update keyboard state
-        if (scanCode != NULL && scanCode->value != 0x00) {
-            if (scanCode->isExtend) {
-                if (scanCode->isBreak) {
-                    if (scanCode->value == PS2_KC_CTRL) {
-                        keyboard.modifiers.bits.rightControl = 0;
-                    } else if (scanCode->value == PS2_KC_ALT) {
-                        keyboard.modifiers.bits.rightAlt = 0;
-                    } else {
-                        uint8_t usbHidCode = PS2USB_ScanCodeToUSBHID(scanCode);
-                        GenericQueue_Remove(&keyboard.keys, &usbHidCode);
-                    }
-                } else {
-                    if (scanCode->value == PS2_KC_CTRL) {
-                        keyboard.modifiers.bits.rightControl = 1;
-                    } else if (scanCode->value == PS2_KC_ALT) {
-                        keyboard.modifiers.bits.rightAlt = 1;
-                    } else {
-                        uint8_t usbHidCode = PS2USB_ScanCodeToUSBHID(scanCode);
-                        if (!GenericQueue_Contains(&keyboard.keys, &usbHidCode)) {
-                            GenericQueue_Enqueue(&keyboard.keys, &usbHidCode);
-                        }
-                    }
-                }
-            } else {
-                if (scanCode->isBreak) {
-                    // break code detected, remove from pressed keys
-                    if (scanCode->value == PS2_KC_L_SHIFT) {
-                        keyboard.modifiers.bits.leftShift = 0;
-                    } else if (scanCode->value == PS2_KC_CTRL) {
-                        keyboard.modifiers.bits.leftControl = 0;
-                    } else if (scanCode->value == PS2_KC_ALT) {
-                        keyboard.modifiers.bits.leftAlt = 0;
-                    } else if (scanCode->value == PS2_KC_R_SHIFT) {
-                        keyboard.modifiers.bits.rightShift = 0;
-                    } else {
-                        uint8_t usbHidCode = PS2USB_ScanCodeToUSBHID(scanCode);
-                        GenericQueue_Remove(&keyboard.keys, &usbHidCode);
-                    }
-                } else {
-                    // new code detected, add to pressed keys
-                    if (scanCode->value == PS2_KC_L_SHIFT) {
-                        keyboard.modifiers.bits.leftShift = 1;
-                    } else if (scanCode->value == PS2_KC_CTRL) {
-                        keyboard.modifiers.bits.leftControl = 1;
-                    } else if (scanCode->value == PS2_KC_ALT) {
-                        keyboard.modifiers.bits.leftAlt = 1;
-                    } else if (scanCode->value == PS2_KC_R_SHIFT) {
-                        keyboard.modifiers.bits.rightShift = 1;
-                    } else {
-                        uint8_t usbHidCode = PS2USB_ScanCodeToUSBHID(scanCode);
-                        if (!GenericQueue_Contains(&keyboard.keys, &usbHidCode)) {
-                            GenericQueue_Enqueue(&keyboard.keys, &usbHidCode);
-                        }
-                    }
-                }
-            }
-        }
         /* Clear the INPUT report buffer.  Set to all zeros. */
         memset(&inputReport, 0, sizeof (inputReport));
         // update INPUT report buffer with keyboard state

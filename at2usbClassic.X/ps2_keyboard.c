@@ -32,13 +32,13 @@ static volatile bool keyboardIsBreak = false;
 
 static volatile uint32_t prevTimeMs = 0;
 
-static void PS2KeyboardDataInterrupt(void);
-static void PS2KeyboardClockInterrupt(void);
+static void PS2Keyboard_DataInterrupt(void);
+static void PS2Keyboard_ClockInterrupt(void);
 
 void PS2Keyboard_Init() {
     GenericQueue_Init(&keyboardScanCodeQueue, sizeof (PS2ScanCode));
-    KBD_CLK_SetInterruptHandler(PS2KeyboardClockInterrupt);
-    KBD_DATA_SetInterruptHandler(PS2KeyboardDataInterrupt);
+    KBD_CLK_SetInterruptHandler(PS2Keyboard_ClockInterrupt);
+    KBD_DATA_SetInterruptHandler(PS2Keyboard_DataInterrupt);
 }
 
 bool PS2Keyboard_GetScanCode(PS2ScanCode* scanCode) {
@@ -54,16 +54,16 @@ bool PS2Keyboard_GetScanCode(PS2ScanCode* scanCode) {
     return ret;
 }
 
-static void PS2KeyboardDataInterrupt(void) {
+static void PS2Keyboard_DataInterrupt(void) {
     if (keyboardState == KeyboardIdle) {
         keyboardState = KeyboardStart;
+        prevTimeMs = SysTime_GetCurrentTimeMs();
     }
 }
 
-static void PS2KeyboardClockInterrupt(void) {
+static void PS2Keyboard_ClockInterrupt(void) {
     if (SysTime_GetCurrentTimeMs() - prevTimeMs >= KEYBOARD_RESET_TIMEOUT_MS) {
         keyboardState = KeyboardStart;
-        prevTimeMs = SysTime_GetCurrentTimeMs();
     }
     switch (keyboardState) {
         case KeyboardStart:
@@ -109,4 +109,5 @@ static void PS2KeyboardClockInterrupt(void) {
             keyboardState = KeyboardIdle;
             break;
     }
+    prevTimeMs = SysTime_GetCurrentTimeMs();
 }
