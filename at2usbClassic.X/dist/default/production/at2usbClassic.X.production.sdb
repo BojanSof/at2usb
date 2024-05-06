@@ -107,7 +107,7 @@ EVENT_EP0_REQUEST 3
 EVENT_ATTACH 4
 EVENT_TRANSFER_TERMINATED 5
 ]
-"386 D:\Personal\at-usb-keyboard\AT2USB\at2usbClassic.X\app_device_keyboard.c
+"344 D:\Personal\at-usb-keyboard\AT2USB\at2usbClassic.X\app_device_keyboard.c
 [e E465 . `uc
 DETACHED_STATE 0
 ATTACHED_STATE 1
@@ -118,25 +118,27 @@ ADDRESS_STATE 16
 CONFIGURED_STATE 32
 ]
 "24 D:\Personal\at-usb-keyboard\AT2USB\at2usbClassic.X\ps2_keyboard.c
-[e E3464 KeyboardFsmState `uc
+[e E3467 KeyboardFsmState `uc
 KeyboardIdle 0
 KeyboardStart 1
 KeyboardData 2
 KeyboardParity 3
 KeyboardStop 4
 ]
-"295 D:\Personal\at-usb-keyboard\AT2USB\at2usbClassic.X\app_device_keyboard.c
+"309 D:\Personal\at-usb-keyboard\AT2USB\at2usbClassic.X\app_device_keyboard.c
 [v _APP_KeyboardInit APP_KeyboardInit `(v  1 e 1 0 ]
-"319
+"333
 [v _APP_KeyboardTasks APP_KeyboardTasks `(v  1 e 1 0 ]
-"488
+"445
+[v _APP_KeyboardUpdateState APP_KeyboardUpdateState `(v  1 s 1 APP_KeyboardUpdateState ]
+"525
 [v _APP_KeyboardProcessOutputReport APP_KeyboardProcessOutputReport `(v  1 s 1 APP_KeyboardProcessOutputReport ]
 [v i1_APP_KeyboardProcessOutputReport APP_KeyboardProcessOutputReport `(v  1 s 1 i1_APP_KeyboardProcessOutputReport ]
-"496
+"530
 [v _USBHIDCBSetReportComplete USBHIDCBSetReportComplete `(v  1 s 1 USBHIDCBSetReportComplete ]
-"505
+"539
 [v _USBHIDCBSetReportHandler USBHIDCBSetReportHandler `(v  1 e 1 0 ]
-"516
+"550
 [v _USBHIDCBSetIdleRateHandler USBHIDCBSetIdleRateHandler `(v  1 e 1 0 ]
 "5 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\awmod.c
 [v ___awmod __awmod `(i  1 e 2 0 ]
@@ -263,13 +265,18 @@ KeyboardStop 4
 [v _TMR2_SetInterruptHandler TMR2_SetInterruptHandler `(v  1 e 1 0 ]
 "136
 [v _TMR2_DefaultInterruptHandler TMR2_DefaultInterruptHandler `(v  1 e 1 0 ]
-"38 D:\Personal\at-usb-keyboard\AT2USB\at2usbClassic.X\ps2_keyboard.c
+"43 D:\Personal\at-usb-keyboard\AT2USB\at2usbClassic.X\ps2_keyboard.c
 [v _PS2Keyboard_Init PS2Keyboard_Init `(v  1 e 1 0 ]
-"44
+"49
 [v _PS2Keyboard_GetScanCode PS2Keyboard_GetScanCode `(a  1 e 1 0 ]
-"57
+"60
+[v _PS2Keyboard_SendCommand PS2Keyboard_SendCommand `(v  1 e 1 0 ]
+[v i1_PS2Keyboard_SendCommand PS2Keyboard_SendCommand `(v  1 e 1 0 ]
+"75
+[v _PS2Keyboard_GetLastCommand PS2Keyboard_GetLastCommand `(uc  1 e 1 0 ]
+"79
 [v _PS2Keyboard_DataInterrupt PS2Keyboard_DataInterrupt `(v  1 s 1 PS2Keyboard_DataInterrupt ]
-"64
+"86
 [v _PS2Keyboard_ClockInterrupt PS2Keyboard_ClockInterrupt `(v  1 s 1 PS2Keyboard_ClockInterrupt ]
 "396 D:\Personal\at-usb-keyboard\AT2USB\at2usbClassic.X\ps2usb.c
 [v _PS2USB_ScanCodeToUSBHID PS2USB_ScanCodeToUSBHID `(uc  1 e 1 0 ]
@@ -341,7 +348,7 @@ KeyboardStop 4
 "52 D:\Personal\at-usb-keyboard\AT2USB\at2usbClassic.X\app_device_keyboard.c
 [v _hid_rpt01 hid_rpt01 `DCS2438  1 e 63 0 ]
 [s S2656 . 95 `[90]uc 1 buffer 90 0 `ui 1 element_size 2 90 `uc 1 front 1 92 `uc 1 rear 1 93 `uc 1 size 1 94 ]
-"255
+"268
 [s S2662 . 1 `uc 1 leftControl 1 0 :1:0 
 `uc 1 leftShift 1 0 :1:1 
 `uc 1 leftAlt 1 0 :1:2 
@@ -352,22 +359,23 @@ KeyboardStop 4
 `uc 1 rightGUI 1 0 :1:7 
 ]
 [u S2671 . 1 `uc 1 value 1 0 `S2662 1 bits 1 0 ]
-[s S2674 . 100 `*.39v 1 lastINTransmission 2 0 `*.39v 1 lastOUTTransmission 2 2 `S2656 1 keys 95 4 `S2671 1 modifiers 1 99 ]
-[v _keyboard keyboard `S2674  1 s 100 keyboard ]
-"260
-[s S2691 . 8 `S2671 1 modifiers 1 0 `uc 1 . 1 1 :8:0 
-`[6]uc 1 keys 6 2 ]
-[v _inputReport inputReport `S2691  1 s 8 inputReport ]
-[s S2695 . 1 `uc 1 numLock 1 0 :1:0 
+[s S2674 . 1 `uc 1 numLock 1 0 :1:0 
 `uc 1 capsLock 1 0 :1:1 
 `uc 1 scrollLock 1 0 :1:2 
 `uc 1 compose 1 0 :1:3 
 `uc 1 kana 1 0 :1:4 
 `uc 1 . 1 0 :3:5 
 ]
-"265
-[u S2702 . 1 `uc 1 value 1 0 `S2695 1 leds 1 0 ]
-[v _outputReport outputReport `VES2702  1 s 1 outputReport ]
+[u S2681 . 1 `uc 1 value 1 0 `S2674 1 bits 1 0 ]
+[s S2684 . 101 `*.39v 1 lastINTransmission 2 0 `*.39v 1 lastOUTTransmission 2 2 `S2656 1 keys 95 4 `S2671 1 modifiers 1 99 `S2681 1 leds 1 100 ]
+[v _keyboard keyboard `S2684  1 s 101 keyboard ]
+"273
+[s S2702 . 8 `S2671 1 modifiers 1 0 `uc 1 . 1 1 :8:0 
+`[6]uc 1 keys 6 2 ]
+[v _inputReport inputReport `S2702  1 s 8 inputReport ]
+"278
+[u S2713 . 1 `uc 1 value 1 0 `S2674 1 leds 1 0 ]
+[v _outputReport outputReport `VES2713  1 s 1 outputReport ]
 [s S2662 . 1 `uc 1 leftControl 1 0 :1:0 
 `uc 1 leftShift 1 0 :1:1 
 `uc 1 leftAlt 1 0 :1:2 
@@ -377,16 +385,16 @@ KeyboardStop 4
 `uc 1 rightAlt 1 0 :1:6 
 `uc 1 rightGUI 1 0 :1:7 
 ]
-"281
+"295
 [u S2671 . 1 `uc 1 value 1 0 `S2662 1 bits 1 0 ]
-[s S2691 . 8 `S2671 1 modifiers 1 0 `uc 1 . 1 1 :8:0 
+[s S2702 . 8 `S2671 1 modifiers 1 0 `uc 1 . 1 1 :8:0 
 `[6]uc 1 keys 6 2 ]
-[v _oldInputReport oldInputReport `S2691  1 e 8 0 ]
-"282
+[v _oldInputReport oldInputReport `S2702  1 e 8 0 ]
+"296
 [v _keyboardIdleRate keyboardIdleRate `i  1 e 2 0 ]
-"283
+"297
 [v _LocalSOFCount LocalSOFCount `i  1 e 2 0 ]
-"284
+"298
 [v _OldSOFCount OldSOFCount `i  1 s 2 OldSOFCount ]
 [s S154 . 1 `uc 1 IOCIF 1 0 :1:0 
 `uc 1 INTF 1 0 :1:1 
@@ -405,7 +413,7 @@ KeyboardStop 4
 ]
 [u S168 . 1 `S154 1 . 1 0 `S163 1 . 1 0 ]
 [v _INTCONbits INTCONbits `VES168  1 e 1 @11 ]
-[s S2951 . 1 `uc 1 RA0 1 0 :1:0 
+[s S3034 . 1 `uc 1 RA0 1 0 :1:0 
 `uc 1 RA1 1 0 :1:1 
 `uc 1 . 1 0 :1:2 
 `uc 1 RA3 1 0 :1:3 
@@ -413,8 +421,8 @@ KeyboardStop 4
 `uc 1 RA5 1 0 :1:5 
 ]
 "444
-[u S2958 . 1 `S2951 1 . 1 0 ]
-[v _PORTAbits PORTAbits `VES2958  1 e 1 @12 ]
+[u S3041 . 1 `S3034 1 . 1 0 ]
+[v _PORTAbits PORTAbits `VES3041  1 e 1 @12 ]
 [s S371 . 1 `uc 1 TMR1IF 1 0 :1:0 
 `uc 1 TMR2IF 1 0 :1:1 
 `uc 1 . 1 0 :1:2 
@@ -462,6 +470,13 @@ KeyboardStop 4
 [v _T2CONbits T2CONbits `VES490  1 e 1 @28 ]
 "1004
 [v _TRISA TRISA `VEuc  1 e 1 @140 ]
+[s S3002 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 TRISA4 1 0 :1:4 
+`uc 1 TRISA5 1 0 :1:5 
+]
+"1016
+[u S3006 . 1 `S3002 1 . 1 0 ]
+[v _TRISAbits TRISAbits `VES3006  1 e 1 @140 ]
 "1031
 [v _TRISB TRISB `VEuc  1 e 1 @141 ]
 "1070
@@ -515,6 +530,13 @@ KeyboardStop 4
 [v _OSCCON OSCCON `VEuc  1 e 1 @153 ]
 "1866
 [v _LATA LATA `VEuc  1 e 1 @268 ]
+[s S3013 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 LATA4 1 0 :1:4 
+`uc 1 LATA5 1 0 :1:5 
+]
+"1878
+[u S3017 . 1 `S3013 1 . 1 0 ]
+[v _LATAbits LATAbits `VES3017  1 e 1 @268 ]
 "1893
 [v _LATB LATB `VEuc  1 e 1 @269 ]
 "1932
@@ -717,7 +739,7 @@ KeyboardStop 4
 "23 D:\Personal\at-usb-keyboard\AT2USB\at2usbClassic.X\ps2_keyboard.c
 [v _keyboardScanCodeQueue keyboardScanCodeQueue `S2656  1 s 95 keyboardScanCodeQueue ]
 "24
-[v _keyboardState keyboardState `VEE3464  1 s 1 keyboardState ]
+[v _keyboardState keyboardState `VEE3467  1 s 1 keyboardState ]
 "25
 [v _keyboardIndexData keyboardIndexData `VEuc  1 s 1 keyboardIndexData ]
 "26
@@ -734,6 +756,14 @@ KeyboardStop 4
 "31
 [v _keyboardIsBreak keyboardIsBreak `VEa  1 s 1 keyboardIsBreak ]
 "33
+[v _keyboardCommand keyboardCommand `VEuc  1 s 1 keyboardCommand ]
+"34
+[v _keyboardCommandBits keyboardCommandBits `VEuc  1 s 1 keyboardCommandBits ]
+"35
+[v _keyboardCommandCount keyboardCommandCount `VEuc  1 s 1 keyboardCommandCount ]
+"36
+[v _keyboardCommandOnes keyboardCommandOnes `VEuc  1 s 1 keyboardCommandOnes ]
+"38
 [v _prevTimeMs prevTimeMs `VEul  1 s 4 prevTimeMs ]
 "3 D:\Personal\at-usb-keyboard\AT2USB\at2usbClassic.X\ps2usb.c
 [v _ps2UsbMap ps2UsbMap `DC[132]uc  1 s 132 ps2UsbMap ]
@@ -957,17 +987,17 @@ KeyboardStop 4
 "32
 [v main@scanCodeValid scanCodeValid `a  1 a 1 29 ]
 "26
-[v main@F3438 F3438 `S2604  1 s 3 F3438 ]
-"53
+[v main@F3441 F3441 `S2604  1 s 3 F3441 ]
+"54
 } 0
 "13 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\nf_snprintf.c
 [v _snprintf snprintf `(i  1 e 2 0 ]
 {
 [v snprintf@s s `*.5uc  1 a 1 wreg ]
-[u S3499 . 2 `*.39uc 1 buffer 2 0 `*.39DCuc 1 source 2 0 ]
+[u S3597 . 2 `*.39uc 1 buffer 2 0 `*.39DCuc 1 source 2 0 ]
 "17
-[s S3502 _IO_FILE 11 `S3499 1 . 2 0 `i 1 count 2 2 `[3]uc 1 ungetbuf 3 4 `i 1 ungetcnt 2 7 `i 1 limit 2 9 ]
-[v snprintf@f f `S3502  1 a 11 6 ]
+[s S3600 _IO_FILE 11 `S3597 1 . 2 0 `i 1 count 2 2 `[3]uc 1 ungetbuf 3 4 `i 1 ungetcnt 2 7 `i 1 limit 2 9 ]
+[v snprintf@f f `S3600  1 a 11 6 ]
 "15
 [v snprintf@cnt cnt `i  1 a 2 4 ]
 "16
@@ -983,27 +1013,27 @@ KeyboardStop 4
 "1817 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\doprnt.c
 [v _vfprintf vfprintf `(i  1 e 2 0 ]
 {
-[s S3537 _IO_FILE 0 ]
-[v vfprintf@fp fp `*.5S3537  1 a 1 wreg ]
+[s S3635 _IO_FILE 0 ]
+[v vfprintf@fp fp `*.5S3635  1 a 1 wreg ]
 "1820
 [v vfprintf@cfmt cfmt `*.25uc  1 a 2 52 ]
 "1817
-[v vfprintf@fp fp `*.5S3537  1 a 1 wreg ]
+[v vfprintf@fp fp `*.5S3635  1 a 1 wreg ]
 [v vfprintf@fmt fmt `*.25DCuc  1 p 2 47 ]
 [v vfprintf@ap ap `*.5*.4v  1 p 1 49 ]
 "1822
 "1817
-[v vfprintf@fp fp `*.5S3537  1 a 1 51 ]
+[v vfprintf@fp fp `*.5S3635  1 a 1 51 ]
 "1840
 } 0
 "1177
 [v _vfpfcnvrt vfpfcnvrt `(i  1 s 2 vfpfcnvrt ]
 {
-[s S3537 _IO_FILE 0 ]
-[v vfpfcnvrt@fp fp `*.5S3537  1 a 1 wreg ]
-[u S3561 . 4 `i 1 sint 2 0 `ui 1 uint 2 0 `d 1 f 4 0 ]
+[s S3635 _IO_FILE 0 ]
+[v vfpfcnvrt@fp fp `*.5S3635  1 a 1 wreg ]
+[u S3659 . 4 `i 1 sint 2 0 `ui 1 uint 2 0 `d 1 f 4 0 ]
 "1188
-[v vfpfcnvrt@convarg convarg `S3561  1 a 4 38 ]
+[v vfpfcnvrt@convarg convarg `S3659  1 a 4 38 ]
 "1179
 [v vfpfcnvrt@cp cp `*.25uc  1 a 2 44 ]
 "1180
@@ -1011,19 +1041,19 @@ KeyboardStop 4
 "1179
 [v vfpfcnvrt@c c `uc  1 a 1 42 ]
 "1177
-[v vfpfcnvrt@fp fp `*.5S3537  1 a 1 wreg ]
+[v vfpfcnvrt@fp fp `*.5S3635  1 a 1 wreg ]
 [v vfpfcnvrt@fmt fmt `*.4*.25uc  1 p 1 32 ]
 [v vfpfcnvrt@ap ap `*.5*.4v  1 p 1 33 ]
 "1201
 "1177
-[v vfpfcnvrt@fp fp `*.5S3537  1 a 1 46 ]
+[v vfpfcnvrt@fp fp `*.5S3635  1 a 1 46 ]
 "1814
 } 0
 "1055
 [v _xtoa xtoa `(i  1 s 2 xtoa ]
 {
-[s S3537 _IO_FILE 0 ]
-[v xtoa@fp fp `*.5S3537  1 a 1 wreg ]
+[s S3635 _IO_FILE 0 ]
+[v xtoa@fp fp `*.5S3635  1 a 1 wreg ]
 "1063
 [v xtoa@i i `i  1 a 2 30 ]
 [v xtoa@w w `i  1 a 2 27 ]
@@ -1032,27 +1062,27 @@ KeyboardStop 4
 "1067
 [v xtoa@p p `a  1 a 1 26 ]
 "1055
-[v xtoa@fp fp `*.5S3537  1 a 1 wreg ]
+[v xtoa@fp fp `*.5S3635  1 a 1 wreg ]
 [v xtoa@d d `ui  1 p 2 22 ]
 "1067
 "1055
-[v xtoa@fp fp `*.5S3537  1 a 1 25 ]
+[v xtoa@fp fp `*.5S3635  1 a 1 25 ]
 "1153
 } 0
 "193
 [v _pad pad `(i  1 s 2 pad ]
 {
-[s S3537 _IO_FILE 0 ]
-[v pad@fp fp `*.5S3537  1 a 1 wreg ]
+[s S3635 _IO_FILE 0 ]
+[v pad@fp fp `*.5S3635  1 a 1 wreg ]
 "195
 [v pad@i i `i  1 a 2 19 ]
 "193
-[v pad@fp fp `*.5S3537  1 a 1 wreg ]
+[v pad@fp fp `*.5S3635  1 a 1 wreg ]
 [v pad@buf buf `*.6uc  1 p 1 15 ]
 [v pad@p p `i  1 p 2 16 ]
 "199
 "193
-[v pad@fp fp `*.5S3537  1 a 1 21 ]
+[v pad@fp fp `*.5S3635  1 a 1 21 ]
 "226
 } 0
 "5 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\strlen.c
@@ -1077,9 +1107,9 @@ KeyboardStop 4
 [v fputs@c c `uc  1 a 1 11 ]
 "8
 [v fputs@s s `*.6DCuc  1 a 1 wreg ]
-[u S3499 . 2 `*.39uc 1 buffer 2 0 `*.39DCuc 1 source 2 0 ]
-[s S3502 _IO_FILE 11 `S3499 1 . 2 0 `i 1 count 2 2 `[3]uc 1 ungetbuf 3 4 `i 1 ungetcnt 2 7 `i 1 limit 2 9 ]
-[v fputs@fp fp `*.5S3502  1 p 1 8 ]
+[u S3597 . 2 `*.39uc 1 buffer 2 0 `*.39DCuc 1 source 2 0 ]
+[s S3600 _IO_FILE 11 `S3597 1 . 2 0 `i 1 count 2 2 `[3]uc 1 ungetbuf 3 4 `i 1 ungetcnt 2 7 `i 1 limit 2 9 ]
+[v fputs@fp fp `*.5S3600  1 p 1 8 ]
 "13
 [v fputs@s s `*.6DCuc  1 a 1 14 ]
 "19
@@ -1101,26 +1131,26 @@ KeyboardStop 4
 "476
 [v _ctoa ctoa `(i  1 s 2 ctoa ]
 {
-[s S3537 _IO_FILE 0 ]
-[v ctoa@fp fp `*.5S3537  1 a 1 wreg ]
+[s S3635 _IO_FILE 0 ]
+[v ctoa@fp fp `*.5S3635  1 a 1 wreg ]
 "478
 [v ctoa@w w `i  1 a 2 14 ]
 [v ctoa@l l `i  1 a 2 12 ]
 "476
-[v ctoa@fp fp `*.5S3537  1 a 1 wreg ]
+[v ctoa@fp fp `*.5S3635  1 a 1 wreg ]
 [v ctoa@c c `uc  1 p 1 8 ]
 "481
 "476
-[v ctoa@fp fp `*.5S3537  1 a 1 16 ]
+[v ctoa@fp fp `*.5S3635  1 a 1 16 ]
 "509
 } 0
 "8 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\nf_fputc.c
 [v _fputc fputc `(i  1 e 2 0 ]
 {
 [v fputc@c c `i  1 p 2 0 ]
-[u S3499 . 2 `*.39uc 1 buffer 2 0 `*.39DCuc 1 source 2 0 ]
-[s S3502 _IO_FILE 11 `S3499 1 . 2 0 `i 1 count 2 2 `[3]uc 1 ungetbuf 3 4 `i 1 ungetcnt 2 7 `i 1 limit 2 9 ]
-[v fputc@fp fp `*.5S3502  1 p 1 2 ]
+[u S3597 . 2 `*.39uc 1 buffer 2 0 `*.39DCuc 1 source 2 0 ]
+[s S3600 _IO_FILE 11 `S3597 1 . 2 0 `i 1 count 2 2 `[3]uc 1 ungetbuf 3 4 `i 1 ungetcnt 2 7 `i 1 limit 2 9 ]
+[v fputc@fp fp `*.5S3600  1 p 1 2 ]
 "24
 } 0
 "7 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\putch.c
@@ -1219,10 +1249,10 @@ KeyboardStop 4
 [v EUSART_SetErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 0 ]
 "274
 } 0
-"38 D:\Personal\at-usb-keyboard\AT2USB\at2usbClassic.X\ps2_keyboard.c
+"43 D:\Personal\at-usb-keyboard\AT2USB\at2usbClassic.X\ps2_keyboard.c
 [v _PS2Keyboard_Init PS2Keyboard_Init `(v  1 e 1 0 ]
 {
-"42
+"47
 } 0
 "183 D:\Personal\at-usb-keyboard\AT2USB\at2usbClassic.X\mcc_generated_files/pin_manager.c
 [v _IOCAF5_SetInterruptHandler IOCAF5_SetInterruptHandler `(v  1 e 1 0 ]
@@ -1244,17 +1274,17 @@ KeyboardStop 4
 [v GenericQueue_Init@element_size element_size `ui  1 p 2 2 ]
 "9
 } 0
-"44 D:\Personal\at-usb-keyboard\AT2USB\at2usbClassic.X\ps2_keyboard.c
+"49 D:\Personal\at-usb-keyboard\AT2USB\at2usbClassic.X\ps2_keyboard.c
 [v _PS2Keyboard_GetScanCode PS2Keyboard_GetScanCode `(a  1 e 1 0 ]
 {
 [s S2604 PS2ScanCode 3 `uc 1 value 1 0 `a 1 isExtend 1 1 `a 1 isBreak 1 2 ]
 [v PS2Keyboard_GetScanCode@scanCode scanCode `*.5S2604  1 a 1 wreg ]
-"45
+"50
 [v PS2Keyboard_GetScanCode@ret ret `a  1 a 1 32 ]
-"44
+"49
 [v PS2Keyboard_GetScanCode@scanCode scanCode `*.5S2604  1 a 1 wreg ]
 [v PS2Keyboard_GetScanCode@scanCode scanCode `*.5S2604  1 a 1 31 ]
-"55
+"58
 } 0
 "27 D:\Personal\at-usb-keyboard\AT2USB\at2usbClassic.X\generic_queue.c
 [v _GenericQueue_Dequeue GenericQueue_Dequeue `(v  1 e 1 0 ]
@@ -1277,31 +1307,23 @@ KeyboardStop 4
 [v EUSART_Write@txData txData `uc  1 a 1 1 ]
 "194
 } 0
-"319 D:\Personal\at-usb-keyboard\AT2USB\at2usbClassic.X\app_device_keyboard.c
+"333 D:\Personal\at-usb-keyboard\AT2USB\at2usbClassic.X\app_device_keyboard.c
 [v _APP_KeyboardTasks APP_KeyboardTasks `(v  1 e 1 0 ]
 {
 [s S2604 PS2ScanCode 3 `uc 1 value 1 0 `a 1 isExtend 1 1 `a 1 isBreak 1 2 ]
 [v APP_KeyboardTasks@scanCode scanCode `*.5DCS2604  1 a 1 wreg ]
-"374
-[v APP_KeyboardTasks@usbHidCode_2878 usbHidCode `uc  1 a 1 39 ]
-"360
-[v APP_KeyboardTasks@usbHidCode_2877 usbHidCode `uc  1 a 1 36 ]
-"342
-[v APP_KeyboardTasks@usbHidCode_2876 usbHidCode `uc  1 a 1 38 ]
+"334
+[v APP_KeyboardTasks@TimeDeltaMilliseconds TimeDeltaMilliseconds `i  1 a 2 45 ]
+"335
+[v APP_KeyboardTasks@i i `uc  1 a 1 47 ]
+"336
+[v APP_KeyboardTasks@needToSendNewReportPacket needToSendNewReportPacket `a  1 a 1 44 ]
 "333
-[v APP_KeyboardTasks@usbHidCode usbHidCode `uc  1 a 1 35 ]
-"320
-[v APP_KeyboardTasks@TimeDeltaMilliseconds TimeDeltaMilliseconds `i  1 a 2 40 ]
-"321
-[v APP_KeyboardTasks@i i `uc  1 a 1 42 ]
-"322
-[v APP_KeyboardTasks@needToSendNewReportPacket needToSendNewReportPacket `a  1 a 1 37 ]
-"319
 [v APP_KeyboardTasks@scanCode scanCode `*.5DCS2604  1 a 1 wreg ]
-"325
-"319
+"339
+"333
 [v APP_KeyboardTasks@scanCode scanCode `*.5DCS2604  1 a 1 43 ]
-"486
+"443
 } 0
 "3 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\memset.c
 [v _memset memset `(*.39v  1 e 2 0 ]
@@ -1355,6 +1377,52 @@ KeyboardStop 4
 [v USBTransferOnePacket@ep ep `uc  1 a 1 8 ]
 "1051
 } 0
+"63 D:\Personal\at-usb-keyboard\AT2USB\at2usbClassic.X\generic_queue.c
+[v _GenericQueue_CopyToArray GenericQueue_CopyToArray `(v  1 e 1 0 ]
+{
+"65
+[v GenericQueue_CopyToArray@count count `uc  1 a 1 32 ]
+"64
+[v GenericQueue_CopyToArray@index index `uc  1 a 1 31 ]
+[s S2656 . 95 `[90]uc 1 buffer 90 0 `ui 1 element_size 2 90 `uc 1 front 1 92 `uc 1 rear 1 93 `uc 1 size 1 94 ]
+"63
+[v GenericQueue_CopyToArray@q q `*.39S2656  1 p 2 24 ]
+[v GenericQueue_CopyToArray@array array `*.4v  1 p 1 26 ]
+"73
+} 0
+"4 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\Umul8.c
+[v ___bmul __bmul `(uc  1 e 1 0 ]
+{
+[v ___bmul@multiplier multiplier `uc  1 a 1 wreg ]
+"6
+[v ___bmul@product product `uc  1 a 1 2 ]
+"4
+[v ___bmul@multiplier multiplier `uc  1 a 1 wreg ]
+[v ___bmul@multiplicand multiplicand `uc  1 p 1 0 ]
+"6
+[v ___bmul@multiplier multiplier `uc  1 a 1 3 ]
+"51
+} 0
+"445 D:\Personal\at-usb-keyboard\AT2USB\at2usbClassic.X\app_device_keyboard.c
+[v _APP_KeyboardUpdateState APP_KeyboardUpdateState `(v  1 s 1 APP_KeyboardUpdateState ]
+{
+[s S2604 PS2ScanCode 3 `uc 1 value 1 0 `a 1 isExtend 1 1 `a 1 isBreak 1 2 ]
+[v APP_KeyboardUpdateState@scanCode scanCode `*.5DCS2604  1 a 1 wreg ]
+"515
+[v APP_KeyboardUpdateState@usbHidCode_2937 usbHidCode `uc  1 a 1 39 ]
+"486
+[v APP_KeyboardUpdateState@leds leds `uc  1 a 1 35 ]
+"481
+[v APP_KeyboardUpdateState@usbHidCode_2929 usbHidCode `uc  1 a 1 37 ]
+"463
+[v APP_KeyboardUpdateState@usbHidCode_2928 usbHidCode `uc  1 a 1 38 ]
+"454
+[v APP_KeyboardUpdateState@usbHidCode usbHidCode `uc  1 a 1 36 ]
+"445
+[v APP_KeyboardUpdateState@scanCode scanCode `*.5DCS2604  1 a 1 wreg ]
+[v APP_KeyboardUpdateState@scanCode scanCode `*.5DCS2604  1 a 1 40 ]
+"523
+} 0
 "396 D:\Personal\at-usb-keyboard\AT2USB\at2usbClassic.X\ps2usb.c
 [v _PS2USB_ScanCodeToUSBHID PS2USB_ScanCodeToUSBHID `(uc  1 e 1 0 ]
 {
@@ -1363,6 +1431,11 @@ KeyboardStop 4
 [v PS2USB_ScanCodeToUSBHID@scanCode scanCode `*.5DCS2604  1 a 1 wreg ]
 [v PS2USB_ScanCodeToUSBHID@scanCode scanCode `*.5DCS2604  1 a 1 0 ]
 "402
+} 0
+"75 D:\Personal\at-usb-keyboard\AT2USB\at2usbClassic.X\ps2_keyboard.c
+[v _PS2Keyboard_GetLastCommand PS2Keyboard_GetLastCommand `(uc  1 e 1 0 ]
+{
+"77
 } 0
 "35 D:\Personal\at-usb-keyboard\AT2USB\at2usbClassic.X\generic_queue.c
 [v _GenericQueue_Remove GenericQueue_Remove `(v  1 e 1 0 ]
@@ -1385,26 +1458,6 @@ KeyboardStop 4
 [v GenericQueue_Enqueue@item item `*.39DCv  1 p 2 26 ]
 "25
 } 0
-"15
-[v _GenericQueue_IsFull GenericQueue_IsFull `(i  1 e 2 0 ]
-{
-[s S2656 . 95 `[90]uc 1 buffer 90 0 `ui 1 element_size 2 90 `uc 1 front 1 92 `uc 1 rear 1 93 `uc 1 size 1 94 ]
-[v GenericQueue_IsFull@q q `*.39S2656  1 p 2 0 ]
-"17
-} 0
-"63
-[v _GenericQueue_CopyToArray GenericQueue_CopyToArray `(v  1 e 1 0 ]
-{
-"65
-[v GenericQueue_CopyToArray@count count `uc  1 a 1 32 ]
-"64
-[v GenericQueue_CopyToArray@index index `uc  1 a 1 31 ]
-[s S2656 . 95 `[90]uc 1 buffer 90 0 `ui 1 element_size 2 90 `uc 1 front 1 92 `uc 1 rear 1 93 `uc 1 size 1 94 ]
-"63
-[v GenericQueue_CopyToArray@q q `*.39S2656  1 p 2 24 ]
-[v GenericQueue_CopyToArray@array array `*.4v  1 p 1 26 ]
-"73
-} 0
 "4 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\memcpy.c
 [v _memcpy memcpy `(*.39v  1 e 2 0 ]
 {
@@ -1420,20 +1473,14 @@ KeyboardStop 4
 [v memcpy@n n `ui  1 p 2 17 ]
 "18
 } 0
-"4 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\Umul8.c
-[v ___bmul __bmul `(uc  1 e 1 0 ]
+"15 D:\Personal\at-usb-keyboard\AT2USB\at2usbClassic.X\generic_queue.c
+[v _GenericQueue_IsFull GenericQueue_IsFull `(i  1 e 2 0 ]
 {
-[v ___bmul@multiplier multiplier `uc  1 a 1 wreg ]
-"6
-[v ___bmul@product product `uc  1 a 1 2 ]
-"4
-[v ___bmul@multiplier multiplier `uc  1 a 1 wreg ]
-[v ___bmul@multiplicand multiplicand `uc  1 p 1 0 ]
-"6
-[v ___bmul@multiplier multiplier `uc  1 a 1 3 ]
-"51
+[s S2656 . 95 `[90]uc 1 buffer 90 0 `ui 1 element_size 2 90 `uc 1 front 1 92 `uc 1 rear 1 93 `uc 1 size 1 94 ]
+[v GenericQueue_IsFull@q q `*.39S2656  1 p 2 0 ]
+"17
 } 0
-"52 D:\Personal\at-usb-keyboard\AT2USB\at2usbClassic.X\generic_queue.c
+"52
 [v _GenericQueue_Contains GenericQueue_Contains `(a  1 e 1 0 ]
 {
 "54
@@ -1484,10 +1531,18 @@ KeyboardStop 4
 [v GenericQueue_IsEmpty@q q `*.39S2656  1 p 2 0 ]
 "13
 } 0
-"488 D:\Personal\at-usb-keyboard\AT2USB\at2usbClassic.X\app_device_keyboard.c
+"525 D:\Personal\at-usb-keyboard\AT2USB\at2usbClassic.X\app_device_keyboard.c
 [v _APP_KeyboardProcessOutputReport APP_KeyboardProcessOutputReport `(v  1 s 1 APP_KeyboardProcessOutputReport ]
 {
-"494
+"528
+} 0
+"60 D:\Personal\at-usb-keyboard\AT2USB\at2usbClassic.X\ps2_keyboard.c
+[v _PS2Keyboard_SendCommand PS2Keyboard_SendCommand `(v  1 e 1 0 ]
+{
+[v PS2Keyboard_SendCommand@cmd cmd `uc  1 a 1 wreg ]
+[v PS2Keyboard_SendCommand@cmd cmd `uc  1 a 1 wreg ]
+[v PS2Keyboard_SendCommand@cmd cmd `uc  1 a 1 0 ]
+"73
 } 0
 "52 D:\Personal\at-usb-keyboard\AT2USB\at2usbClassic.X\mcc_generated_files/interrupt_manager.c
 [v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `II(v  1 e 1 0 ]
@@ -1670,25 +1725,25 @@ KeyboardStop 4
 {
 "249
 } 0
-"505 D:\Personal\at-usb-keyboard\AT2USB\at2usbClassic.X\app_device_keyboard.c
+"539 D:\Personal\at-usb-keyboard\AT2USB\at2usbClassic.X\app_device_keyboard.c
 [v _USBHIDCBSetReportHandler USBHIDCBSetReportHandler `(v  1 e 1 0 ]
 {
-"510
+"544
 } 0
-"516
+"550
 [v _USBHIDCBSetIdleRateHandler USBHIDCBSetIdleRateHandler `(v  1 e 1 0 ]
 {
 [v USBHIDCBSetIdleRateHandler@reportID reportID `uc  1 a 1 wreg ]
 [v USBHIDCBSetIdleRateHandler@reportID reportID `uc  1 a 1 wreg ]
 [v USBHIDCBSetIdleRateHandler@newIdleRate newIdleRate `uc  1 p 1 0 ]
-"520
+"554
 [v USBHIDCBSetIdleRateHandler@reportID reportID `uc  1 a 1 3 ]
-"523
+"557
 } 0
-"295
+"309
 [v _APP_KeyboardInit APP_KeyboardInit `(v  1 e 1 0 ]
 {
-"317
+"331
 } 0
 "999 D:\Personal\at-usb-keyboard\AT2USB\at2usbClassic.X\usb/usb_device.c
 [v i1_USBTransferOnePacket USBTransferOnePacket `(*.39v  1 e 2 0 ]
@@ -1817,15 +1872,23 @@ KeyboardStop 4
 [v USBCtrlTrfInHandler@lastDTS lastDTS `uc  1 a 1 7 ]
 "2674
 } 0
-"496 D:\Personal\at-usb-keyboard\AT2USB\at2usbClassic.X\app_device_keyboard.c
+"530 D:\Personal\at-usb-keyboard\AT2USB\at2usbClassic.X\app_device_keyboard.c
 [v _USBHIDCBSetReportComplete USBHIDCBSetReportComplete `(v  1 s 1 USBHIDCBSetReportComplete ]
 {
-"503
+"537
 } 0
-"488
+"525
 [v i1_APP_KeyboardProcessOutputReport APP_KeyboardProcessOutputReport `(v  1 s 1 i1_APP_KeyboardProcessOutputReport ]
 {
-"494
+"528
+} 0
+"60 D:\Personal\at-usb-keyboard\AT2USB\at2usbClassic.X\ps2_keyboard.c
+[v i1_PS2Keyboard_SendCommand PS2Keyboard_SendCommand `(v  1 e 1 0 ]
+{
+[v i1PS2Keyboard_SendCommand@cmd cmd `uc  1 a 1 wreg ]
+[v i1PS2Keyboard_SendCommand@cmd cmd `uc  1 a 1 wreg ]
+[v i1PS2Keyboard_SendCommand@cmd cmd `uc  1 a 1 0 ]
+"73
 } 0
 "1775 D:\Personal\at-usb-keyboard\AT2USB\at2usbClassic.X\usb/usb_device.c
 [v _USBCtrlTrfTxService USBCtrlTrfTxService `(v  1 s 1 USBCtrlTrfTxService ]
@@ -1864,10 +1927,10 @@ KeyboardStop 4
 {
 "193
 } 0
-"57 D:\Personal\at-usb-keyboard\AT2USB\at2usbClassic.X\ps2_keyboard.c
+"79 D:\Personal\at-usb-keyboard\AT2USB\at2usbClassic.X\ps2_keyboard.c
 [v _PS2Keyboard_DataInterrupt PS2Keyboard_DataInterrupt `(v  1 s 1 PS2Keyboard_DataInterrupt ]
 {
-"62
+"84
 } 0
 "138 D:\Personal\at-usb-keyboard\AT2USB\at2usbClassic.X\mcc_generated_files/pin_manager.c
 [v _IOCAF4_ISR IOCAF4_ISR `(v  1 e 1 0 ]
@@ -1879,10 +1942,14 @@ KeyboardStop 4
 {
 "163
 } 0
-"64 D:\Personal\at-usb-keyboard\AT2USB\at2usbClassic.X\ps2_keyboard.c
+"86 D:\Personal\at-usb-keyboard\AT2USB\at2usbClassic.X\ps2_keyboard.c
 [v _PS2Keyboard_ClockInterrupt PS2Keyboard_ClockInterrupt `(v  1 s 1 PS2Keyboard_ClockInterrupt ]
 {
-"113
+"91
+[v PS2Keyboard_ClockInterrupt@bit bit `a  1 a 1 13 ]
+"90
+[v PS2Keyboard_ClockInterrupt@bitPos bitPos `uc  1 a 1 12 ]
+"159
 } 0
 "19 D:\Personal\at-usb-keyboard\AT2USB\at2usbClassic.X\generic_queue.c
 [v i1_GenericQueue_Enqueue GenericQueue_Enqueue `(v  1 e 1 0 ]

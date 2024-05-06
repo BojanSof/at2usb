@@ -200,5 +200,7 @@ typedef struct PS2ScanCode {
 
 void PS2Keyboard_Init(void);
 bool PS2Keyboard_GetScanCode(PS2ScanCode* scanCode);
+void PS2Keyboard_SendCommand(uint8_t cmd);
+uint8_t PS2Keyboard_GetLastCommand();
 
 #endif //PS2_KEYBOARD_H

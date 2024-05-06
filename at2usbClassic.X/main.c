@@ -34,6 +34,7 @@ int main(void) {
     char scanCodeStr[10] = "";
     uint8_t strLen = 0;
     uint8_t i = 0;
+    
     while (1) {
         scanCodeValid = PS2Keyboard_GetScanCode(&scanCode);
         if(scanCodeValid) {
