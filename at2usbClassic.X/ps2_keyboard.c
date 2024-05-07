@@ -72,7 +72,7 @@ void PS2Keyboard_SendCommand(uint8_t cmd) {
     ei();
 }
 
-uint8_t PS2Keyboard_GetLastCommand() {
+uint8_t PS2Keyboard_GetLastCommand(void) {
     return keyboardCommand;
 }
 

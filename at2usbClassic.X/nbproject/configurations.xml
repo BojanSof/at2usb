@@ -30,7 +30,6 @@
       <itemPath>ps2_keyboard.h</itemPath>
       <itemPath>systime.h</itemPath>
       <itemPath>ps2usb.h</itemPath>
-      <itemPath>queue.h</itemPath>
       <itemPath>generic_queue.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
@@ -67,7 +66,6 @@
       <itemPath>ps2_keyboard.c</itemPath>
       <itemPath>systime.c</itemPath>
       <itemPath>ps2usb.c</itemPath>
-      <itemPath>queue.c</itemPath>
       <itemPath>generic_queue.c</itemPath>
     </logicalFolder>
   </logicalFolder>

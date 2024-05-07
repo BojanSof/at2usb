@@ -43,7 +43,7 @@ int main(void) {
             hndlScanCode = NULL;
         }
         if(hndlScanCode != NULL) {
-            strLen = snprintf(scanCodeStr, sizeof(scanCodeStr), "%c%02X\r\n", hndlScanCode->isBreak ? 'b' : ' ', hndlScanCode->value);
+            strLen = (uint8_t)snprintf(scanCodeStr, sizeof(scanCodeStr), "%c%02X\r\n", hndlScanCode->isBreak ? 'b' : ' ', hndlScanCode->value);
             for(i = 0; i < strLen; i++) {
                 while(!EUSART_is_tx_ready());
                 EUSART_Write((uint8_t)scanCodeStr[i]);

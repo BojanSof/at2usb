@@ -3,7 +3,7 @@
 
 #include <stdint.h>
 
-void SysTime_Init();
+void SysTime_Init(void);
 uint32_t SysTime_GetCurrentTimeMs(void);
 
 #endif // SYSTIME_H

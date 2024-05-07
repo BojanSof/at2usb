@@ -309,6 +309,7 @@ static signed int OldSOFCount;
 void APP_KeyboardInit(void) {
     GenericQueue_Init(&keyboard.keys, sizeof (uint8_t));
     keyboard.modifiers.value = 0;
+    keyboard.leds.value = 0;
     //initialize the variable holding the handle for the last
     // transmission
     keyboard.lastINTransmission = 0;
@@ -483,13 +484,14 @@ static void APP_KeyboardUpdateState(const PS2ScanCode* scanCode) {
                 }
             } else if (scanCode->value == PS2_KC_ACK) {
                 if (PS2Keyboard_GetLastCommand() == PS2_KC_LOCK) {
-                    uint8_t leds = keyboard.leds.bits.numLock << 1
-                            | keyboard.leds.bits.capsLock << 2
-                            | keyboard.leds.bits.scrollLock << 0;
+                    uint8_t leds = (uint8_t)(keyboard.leds.bits.numLock << 1)
+                            | (uint8_t)(keyboard.leds.bits.capsLock << 2)
+                            | (uint8_t)(keyboard.leds.bits.scrollLock << 0);
                     PS2Keyboard_SendCommand(leds);
                 }
             } else if (scanCode->value == PS2_KC_ERROR
-                    || scanCode->value == PS2_KC_OVERRUN) {
+                    || scanCode->value == PS2_KC_OVERRUN
+                    || scanCode->value == PS2_KC_BAT) {
                 // do nothing so far
             } else {
                 // new code detected, add to pressed keys
@@ -502,16 +504,6 @@ static void APP_KeyboardUpdateState(const PS2ScanCode* scanCode) {
                 } else if (scanCode->value == PS2_KC_R_SHIFT) {
                     keyboard.modifiers.bits.rightShift = 1;
                 } else {
-                    if (scanCode->value == PS2_KC_NUM) {
-                        keyboard.leds.bits.numLock = keyboard.leds.bits.numLock == 1 ? 0 : 1;
-                        PS2Keyboard_SendCommand(PS2_KC_LOCK);
-                    } else if(scanCode->value == PS2_KC_CAPS) {
-                        keyboard.leds.bits.capsLock = keyboard.leds.bits.capsLock == 1 ? 0 : 1;
-                        PS2Keyboard_SendCommand(PS2_KC_LOCK);
-                    } else if(scanCode->value == PS2_KC_SCROLL) {
-                        keyboard.leds.bits.scrollLock = keyboard.leds.bits.scrollLock == 1 ? 0 : 1;
-                        PS2Keyboard_SendCommand(PS2_KC_LOCK);
-                    }
                     uint8_t usbHidCode = PS2USB_ScanCodeToUSBHID(scanCode);
                     if (!GenericQueue_Contains(&keyboard.keys, &usbHidCode)) {
                         GenericQueue_Enqueue(&keyboard.keys, &usbHidCode);

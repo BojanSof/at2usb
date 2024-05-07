@@ -51,17 +51,17 @@ OBJECTDIR=build/${CND_CONF}/${IMAGE_TYPE}
 DISTDIR=dist/${CND_CONF}/${IMAGE_TYPE}
 
 # Source Files Quoted if spaced
-SOURCEFILES_QUOTED_IF_SPACED=mcc_generated_files/pin_manager.c mcc_generated_files/device_config.c mcc_generated_files/mcc.c mcc_generated_files/interrupt_manager.c mcc_generated_files/tmr2.c mcc_generated_files/eusart.c usb/usb_device.c usb/usb_device_hid.c usb/usb_descriptors.c usb/usb_events.c main.c app_device_keyboard.c ps2_keyboard.c systime.c ps2usb.c queue.c generic_queue.c
+SOURCEFILES_QUOTED_IF_SPACED=mcc_generated_files/pin_manager.c mcc_generated_files/device_config.c mcc_generated_files/mcc.c mcc_generated_files/interrupt_manager.c mcc_generated_files/tmr2.c mcc_generated_files/eusart.c usb/usb_device.c usb/usb_device_hid.c usb/usb_descriptors.c usb/usb_events.c main.c app_device_keyboard.c ps2_keyboard.c systime.c ps2usb.c generic_queue.c
 
 # Object Files Quoted if spaced
-OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/mcc_generated_files/pin_manager.p1 ${OBJECTDIR}/mcc_generated_files/device_config.p1 ${OBJECTDIR}/mcc_generated_files/mcc.p1 ${OBJECTDIR}/mcc_generated_files/interrupt_manager.p1 ${OBJECTDIR}/mcc_generated_files/tmr2.p1 ${OBJECTDIR}/mcc_generated_files/eusart.p1 ${OBJECTDIR}/usb/usb_device.p1 ${OBJECTDIR}/usb/usb_device_hid.p1 ${OBJECTDIR}/usb/usb_descriptors.p1 ${OBJECTDIR}/usb/usb_events.p1 ${OBJECTDIR}/main.p1 ${OBJECTDIR}/app_device_keyboard.p1 ${OBJECTDIR}/ps2_keyboard.p1 ${OBJECTDIR}/systime.p1 ${OBJECTDIR}/ps2usb.p1 ${OBJECTDIR}/queue.p1 ${OBJECTDIR}/generic_queue.p1
-POSSIBLE_DEPFILES=${OBJECTDIR}/mcc_generated_files/pin_manager.p1.d ${OBJECTDIR}/mcc_generated_files/device_config.p1.d ${OBJECTDIR}/mcc_generated_files/mcc.p1.d ${OBJECTDIR}/mcc_generated_files/interrupt_manager.p1.d ${OBJECTDIR}/mcc_generated_files/tmr2.p1.d ${OBJECTDIR}/mcc_generated_files/eusart.p1.d ${OBJECTDIR}/usb/usb_device.p1.d ${OBJECTDIR}/usb/usb_device_hid.p1.d ${OBJECTDIR}/usb/usb_descriptors.p1.d ${OBJECTDIR}/usb/usb_events.p1.d ${OBJECTDIR}/main.p1.d ${OBJECTDIR}/app_device_keyboard.p1.d ${OBJECTDIR}/ps2_keyboard.p1.d ${OBJECTDIR}/systime.p1.d ${OBJECTDIR}/ps2usb.p1.d ${OBJECTDIR}/queue.p1.d ${OBJECTDIR}/generic_queue.p1.d
+OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/mcc_generated_files/pin_manager.p1 ${OBJECTDIR}/mcc_generated_files/device_config.p1 ${OBJECTDIR}/mcc_generated_files/mcc.p1 ${OBJECTDIR}/mcc_generated_files/interrupt_manager.p1 ${OBJECTDIR}/mcc_generated_files/tmr2.p1 ${OBJECTDIR}/mcc_generated_files/eusart.p1 ${OBJECTDIR}/usb/usb_device.p1 ${OBJECTDIR}/usb/usb_device_hid.p1 ${OBJECTDIR}/usb/usb_descriptors.p1 ${OBJECTDIR}/usb/usb_events.p1 ${OBJECTDIR}/main.p1 ${OBJECTDIR}/app_device_keyboard.p1 ${OBJECTDIR}/ps2_keyboard.p1 ${OBJECTDIR}/systime.p1 ${OBJECTDIR}/ps2usb.p1 ${OBJECTDIR}/generic_queue.p1
+POSSIBLE_DEPFILES=${OBJECTDIR}/mcc_generated_files/pin_manager.p1.d ${OBJECTDIR}/mcc_generated_files/device_config.p1.d ${OBJECTDIR}/mcc_generated_files/mcc.p1.d ${OBJECTDIR}/mcc_generated_files/interrupt_manager.p1.d ${OBJECTDIR}/mcc_generated_files/tmr2.p1.d ${OBJECTDIR}/mcc_generated_files/eusart.p1.d ${OBJECTDIR}/usb/usb_device.p1.d ${OBJECTDIR}/usb/usb_device_hid.p1.d ${OBJECTDIR}/usb/usb_descriptors.p1.d ${OBJECTDIR}/usb/usb_events.p1.d ${OBJECTDIR}/main.p1.d ${OBJECTDIR}/app_device_keyboard.p1.d ${OBJECTDIR}/ps2_keyboard.p1.d ${OBJECTDIR}/systime.p1.d ${OBJECTDIR}/ps2usb.p1.d ${OBJECTDIR}/generic_queue.p1.d
 
 # Object Files
-OBJECTFILES=${OBJECTDIR}/mcc_generated_files/pin_manager.p1 ${OBJECTDIR}/mcc_generated_files/device_config.p1 ${OBJECTDIR}/mcc_generated_files/mcc.p1 ${OBJECTDIR}/mcc_generated_files/interrupt_manager.p1 ${OBJECTDIR}/mcc_generated_files/tmr2.p1 ${OBJECTDIR}/mcc_generated_files/eusart.p1 ${OBJECTDIR}/usb/usb_device.p1 ${OBJECTDIR}/usb/usb_device_hid.p1 ${OBJECTDIR}/usb/usb_descriptors.p1 ${OBJECTDIR}/usb/usb_events.p1 ${OBJECTDIR}/main.p1 ${OBJECTDIR}/app_device_keyboard.p1 ${OBJECTDIR}/ps2_keyboard.p1 ${OBJECTDIR}/systime.p1 ${OBJECTDIR}/ps2usb.p1 ${OBJECTDIR}/queue.p1 ${OBJECTDIR}/generic_queue.p1
+OBJECTFILES=${OBJECTDIR}/mcc_generated_files/pin_manager.p1 ${OBJECTDIR}/mcc_generated_files/device_config.p1 ${OBJECTDIR}/mcc_generated_files/mcc.p1 ${OBJECTDIR}/mcc_generated_files/interrupt_manager.p1 ${OBJECTDIR}/mcc_generated_files/tmr2.p1 ${OBJECTDIR}/mcc_generated_files/eusart.p1 ${OBJECTDIR}/usb/usb_device.p1 ${OBJECTDIR}/usb/usb_device_hid.p1 ${OBJECTDIR}/usb/usb_descriptors.p1 ${OBJECTDIR}/usb/usb_events.p1 ${OBJECTDIR}/main.p1 ${OBJECTDIR}/app_device_keyboard.p1 ${OBJECTDIR}/ps2_keyboard.p1 ${OBJECTDIR}/systime.p1 ${OBJECTDIR}/ps2usb.p1 ${OBJECTDIR}/generic_queue.p1
 
 # Source Files
-SOURCEFILES=mcc_generated_files/pin_manager.c mcc_generated_files/device_config.c mcc_generated_files/mcc.c mcc_generated_files/interrupt_manager.c mcc_generated_files/tmr2.c mcc_generated_files/eusart.c usb/usb_device.c usb/usb_device_hid.c usb/usb_descriptors.c usb/usb_events.c main.c app_device_keyboard.c ps2_keyboard.c systime.c ps2usb.c queue.c generic_queue.c
+SOURCEFILES=mcc_generated_files/pin_manager.c mcc_generated_files/device_config.c mcc_generated_files/mcc.c mcc_generated_files/interrupt_manager.c mcc_generated_files/tmr2.c mcc_generated_files/eusart.c usb/usb_device.c usb/usb_device_hid.c usb/usb_descriptors.c usb/usb_events.c main.c app_device_keyboard.c ps2_keyboard.c systime.c ps2usb.c generic_queue.c
 
 
 
@@ -208,14 +208,6 @@ ${OBJECTDIR}/ps2usb.p1: ps2usb.c  nbproject/Makefile-${CND_CONF}.mk
 	@-${MV} ${OBJECTDIR}/ps2usb.d ${OBJECTDIR}/ps2usb.p1.d 
 	@${FIXDEPS} ${OBJECTDIR}/ps2usb.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
 	
-${OBJECTDIR}/queue.p1: queue.c  nbproject/Makefile-${CND_CONF}.mk 
-	@${MKDIR} "${OBJECTDIR}" 
-	@${RM} ${OBJECTDIR}/queue.p1.d 
-	@${RM} ${OBJECTDIR}/queue.p1 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c  -D__DEBUG=1  -mdebugger=pickit3   -mdfp="${DFP_DIR}/xc8"  -fno-short-double -fno-short-float -O2 -fasmfile -maddrqual=ignore -xassembler-with-cpp -I"./usb" -I"." -mwarn=-3 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall -mno-default-config-bits $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto     -o ${OBJECTDIR}/queue.p1 queue.c 
-	@-${MV} ${OBJECTDIR}/queue.d ${OBJECTDIR}/queue.p1.d 
-	@${FIXDEPS} ${OBJECTDIR}/queue.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
-	
 ${OBJECTDIR}/generic_queue.p1: generic_queue.c  nbproject/Makefile-${CND_CONF}.mk 
 	@${MKDIR} "${OBJECTDIR}" 
 	@${RM} ${OBJECTDIR}/generic_queue.p1.d 
@@ -344,14 +336,6 @@ ${OBJECTDIR}/ps2usb.p1: ps2usb.c  nbproject/Makefile-${CND_CONF}.mk
 	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c   -mdfp="${DFP_DIR}/xc8"  -fno-short-double -fno-short-float -O2 -fasmfile -maddrqual=ignore -xassembler-with-cpp -I"./usb" -I"." -mwarn=-3 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall -mno-default-config-bits $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto     -o ${OBJECTDIR}/ps2usb.p1 ps2usb.c 
 	@-${MV} ${OBJECTDIR}/ps2usb.d ${OBJECTDIR}/ps2usb.p1.d 
 	@${FIXDEPS} ${OBJECTDIR}/ps2usb.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
-	
-${OBJECTDIR}/queue.p1: queue.c  nbproject/Makefile-${CND_CONF}.mk 
-	@${MKDIR} "${OBJECTDIR}" 
-	@${RM} ${OBJECTDIR}/queue.p1.d 
-	@${RM} ${OBJECTDIR}/queue.p1 
-	${MP_CC} $(MP_EXTRA_CC_PRE) -mcpu=$(MP_PROCESSOR_OPTION) -c   -mdfp="${DFP_DIR}/xc8"  -fno-short-double -fno-short-float -O2 -fasmfile -maddrqual=ignore -xassembler-with-cpp -I"./usb" -I"." -mwarn=-3 -Wa,-a -DXPRJ_default=$(CND_CONF)  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall -mno-default-config-bits $(COMPARISON_BUILD)  -std=c99 -gdwarf-3 -mstack=compiled:auto:auto     -o ${OBJECTDIR}/queue.p1 queue.c 
-	@-${MV} ${OBJECTDIR}/queue.d ${OBJECTDIR}/queue.p1.d 
-	@${FIXDEPS} ${OBJECTDIR}/queue.p1.d $(SILENT) -rsi ${MP_CC_DIR}../  
 	
 ${OBJECTDIR}/generic_queue.p1: generic_queue.c  nbproject/Makefile-${CND_CONF}.mk 
 	@${MKDIR} "${OBJECTDIR}" 
