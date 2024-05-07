@@ -31,6 +31,7 @@
       <itemPath>systime.h</itemPath>
       <itemPath>ps2usb.h</itemPath>
       <itemPath>generic_queue.h</itemPath>
+      <itemPath>log.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
@@ -67,6 +68,7 @@
       <itemPath>systime.c</itemPath>
       <itemPath>ps2usb.c</itemPath>
       <itemPath>generic_queue.c</itemPath>
+      <itemPath>log.c</itemPath>
     </logicalFolder>
   </logicalFolder>
   <sourceRootList>

@@ -2,8 +2,7 @@
 
 #include "app_device_keyboard.h"
 #include "systime.h"
-
-#include <string.h>
+#include "log.h"
 
 /*
     Main application
@@ -31,9 +30,7 @@ int main(void) {
     PS2ScanCode scanCode = {0};
     bool scanCodeValid = false;
     PS2ScanCode *hndlScanCode = NULL;
-    char scanCodeStr[10] = "";
-    uint8_t strLen = 0;
-    uint8_t i = 0;
+    char scanCodeStr[6] = {' ', ' ', ' ', ' ', '\r', '\n'};
     
     while (1) {
         scanCodeValid = PS2Keyboard_GetScanCode(&scanCode);
@@ -43,11 +40,10 @@ int main(void) {
             hndlScanCode = NULL;
         }
         if(hndlScanCode != NULL) {
-            strLen = (uint8_t)snprintf(scanCodeStr, sizeof(scanCodeStr), "%c%02X\r\n", hndlScanCode->isBreak ? 'b' : ' ', hndlScanCode->value);
-            for(i = 0; i < strLen; i++) {
-                while(!EUSART_is_tx_ready());
-                EUSART_Write((uint8_t)scanCodeStr[i]);
-            }
+            scanCodeStr[0] = hndlScanCode->isExtend ? 'e' : ' ';
+            scanCodeStr[1] = hndlScanCode->isBreak ? 'b' : ' ';
+            Log_UtilityConvertByteToHex(hndlScanCode->value, &scanCodeStr[2], 2);
+            Log_Message((const uint8_t*)scanCodeStr, sizeof(scanCodeStr));
         }
         APP_KeyboardTasks(hndlScanCode);
     }
