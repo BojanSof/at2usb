@@ -138,7 +138,7 @@ text101 CODE 0 1EA5 1EA5 3 2 1
 text102 CODE 0 10E2 10E2 18 2 1
 stringtext10 STRCODE 0 18D0 18D0 4 2 1
 config CONFIG 4 8007 8007 2 2 1
-$C:\Users\BOJANS~1\AppData\Local\Temp\xcAsu1g.\driver_tmp_12.o
+$C:\Users\BOJANS~1\AppData\Local\Temp\xcAsqvc.\driver_tmp_12.o
 reset_vec CODE 0 0 0 2 2 1
 end_init CODE 0 3D 3D 2 2 1
 config CONFIG 4 8007 8007 2 2 1
@@ -219,74 +219,74 @@ STRING 18D6-1EA3 2
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production\at2usbClassic.X.production.o
-3F cinit CODE >5264:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsu1g.\driver_tmp_1.s
-3F cinit CODE >5267:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsu1g.\driver_tmp_1.s
-3F cinit CODE >5490:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsu1g.\driver_tmp_1.s
-40 cinit CODE >5491:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsu1g.\driver_tmp_1.s
-41 cinit CODE >5492:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsu1g.\driver_tmp_1.s
-42 cinit CODE >5493:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsu1g.\driver_tmp_1.s
-43 cinit CODE >5494:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsu1g.\driver_tmp_1.s
-44 cinit CODE >5495:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsu1g.\driver_tmp_1.s
-45 cinit CODE >5496:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsu1g.\driver_tmp_1.s
-46 cinit CODE >5497:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsu1g.\driver_tmp_1.s
-47 cinit CODE >5498:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsu1g.\driver_tmp_1.s
-48 cinit CODE >5499:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsu1g.\driver_tmp_1.s
-49 cinit CODE >5500:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsu1g.\driver_tmp_1.s
-4A cinit CODE >5501:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsu1g.\driver_tmp_1.s
-4B cinit CODE >5502:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsu1g.\driver_tmp_1.s
-4C cinit CODE >5503:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsu1g.\driver_tmp_1.s
-4D cinit CODE >5504:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsu1g.\driver_tmp_1.s
-4E cinit CODE >5505:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsu1g.\driver_tmp_1.s
-4F cinit CODE >5506:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsu1g.\driver_tmp_1.s
-50 cinit CODE >5529:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsu1g.\driver_tmp_1.s
-51 cinit CODE >5530:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsu1g.\driver_tmp_1.s
-52 cinit CODE >5531:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsu1g.\driver_tmp_1.s
-53 cinit CODE >5532:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsu1g.\driver_tmp_1.s
-54 cinit CODE >5533:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsu1g.\driver_tmp_1.s
-55 cinit CODE >5534:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsu1g.\driver_tmp_1.s
-56 cinit CODE >5535:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsu1g.\driver_tmp_1.s
-57 cinit CODE >5536:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsu1g.\driver_tmp_1.s
-58 cinit CODE >5537:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsu1g.\driver_tmp_1.s
-5B cinit CODE >5541:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsu1g.\driver_tmp_1.s
-5C cinit CODE >5542:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsu1g.\driver_tmp_1.s
-5D cinit CODE >5543:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsu1g.\driver_tmp_1.s
-5E cinit CODE >5544:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsu1g.\driver_tmp_1.s
-5F cinit CODE >5545:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsu1g.\driver_tmp_1.s
-60 cinit CODE >5546:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsu1g.\driver_tmp_1.s
-61 cinit CODE >5547:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsu1g.\driver_tmp_1.s
-62 cinit CODE >5548:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsu1g.\driver_tmp_1.s
-63 cinit CODE >5549:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsu1g.\driver_tmp_1.s
-66 cinit CODE >5553:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsu1g.\driver_tmp_1.s
-67 cinit CODE >5554:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsu1g.\driver_tmp_1.s
-68 cinit CODE >5555:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsu1g.\driver_tmp_1.s
-69 cinit CODE >5556:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsu1g.\driver_tmp_1.s
-6A cinit CODE >5557:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsu1g.\driver_tmp_1.s
-6B cinit CODE >5558:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsu1g.\driver_tmp_1.s
-6C cinit CODE >5559:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsu1g.\driver_tmp_1.s
-6D cinit CODE >5560:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsu1g.\driver_tmp_1.s
-6E cinit CODE >5561:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsu1g.\driver_tmp_1.s
-6F cinit CODE >5565:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsu1g.\driver_tmp_1.s
-70 cinit CODE >5566:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsu1g.\driver_tmp_1.s
-71 cinit CODE >5567:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsu1g.\driver_tmp_1.s
-72 cinit CODE >5568:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsu1g.\driver_tmp_1.s
-73 cinit CODE >5569:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsu1g.\driver_tmp_1.s
-74 cinit CODE >5570:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsu1g.\driver_tmp_1.s
-75 cinit CODE >5571:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsu1g.\driver_tmp_1.s
-76 cinit CODE >5572:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsu1g.\driver_tmp_1.s
-77 cinit CODE >5573:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsu1g.\driver_tmp_1.s
-7A cinit CODE >5577:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsu1g.\driver_tmp_1.s
-7B cinit CODE >5578:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsu1g.\driver_tmp_1.s
-7C cinit CODE >5579:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsu1g.\driver_tmp_1.s
-7D cinit CODE >5580:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsu1g.\driver_tmp_1.s
-7E cinit CODE >5581:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsu1g.\driver_tmp_1.s
-7F cinit CODE >5582:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsu1g.\driver_tmp_1.s
-80 cinit CODE >5583:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsu1g.\driver_tmp_1.s
-81 cinit CODE >5584:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsu1g.\driver_tmp_1.s
-82 cinit CODE >5585:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsu1g.\driver_tmp_1.s
-84 cinit CODE >5591:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsu1g.\driver_tmp_1.s
-84 cinit CODE >5593:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsu1g.\driver_tmp_1.s
-85 cinit CODE >5594:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsu1g.\driver_tmp_1.s
-86 cinit CODE >5595:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsu1g.\driver_tmp_1.s
+3F cinit CODE >5264:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsqvc.\driver_tmp_1.s
+3F cinit CODE >5267:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsqvc.\driver_tmp_1.s
+3F cinit CODE >5490:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsqvc.\driver_tmp_1.s
+40 cinit CODE >5491:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsqvc.\driver_tmp_1.s
+41 cinit CODE >5492:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsqvc.\driver_tmp_1.s
+42 cinit CODE >5493:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsqvc.\driver_tmp_1.s
+43 cinit CODE >5494:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsqvc.\driver_tmp_1.s
+44 cinit CODE >5495:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsqvc.\driver_tmp_1.s
+45 cinit CODE >5496:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsqvc.\driver_tmp_1.s
+46 cinit CODE >5497:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsqvc.\driver_tmp_1.s
+47 cinit CODE >5498:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsqvc.\driver_tmp_1.s
+48 cinit CODE >5499:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsqvc.\driver_tmp_1.s
+49 cinit CODE >5500:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsqvc.\driver_tmp_1.s
+4A cinit CODE >5501:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsqvc.\driver_tmp_1.s
+4B cinit CODE >5502:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsqvc.\driver_tmp_1.s
+4C cinit CODE >5503:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsqvc.\driver_tmp_1.s
+4D cinit CODE >5504:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsqvc.\driver_tmp_1.s
+4E cinit CODE >5505:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsqvc.\driver_tmp_1.s
+4F cinit CODE >5506:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsqvc.\driver_tmp_1.s
+50 cinit CODE >5529:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsqvc.\driver_tmp_1.s
+51 cinit CODE >5530:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsqvc.\driver_tmp_1.s
+52 cinit CODE >5531:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsqvc.\driver_tmp_1.s
+53 cinit CODE >5532:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsqvc.\driver_tmp_1.s
+54 cinit CODE >5533:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsqvc.\driver_tmp_1.s
+55 cinit CODE >5534:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsqvc.\driver_tmp_1.s
+56 cinit CODE >5535:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsqvc.\driver_tmp_1.s
+57 cinit CODE >5536:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsqvc.\driver_tmp_1.s
+58 cinit CODE >5537:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsqvc.\driver_tmp_1.s
+5B cinit CODE >5541:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsqvc.\driver_tmp_1.s
+5C cinit CODE >5542:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsqvc.\driver_tmp_1.s
+5D cinit CODE >5543:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsqvc.\driver_tmp_1.s
+5E cinit CODE >5544:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsqvc.\driver_tmp_1.s
+5F cinit CODE >5545:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsqvc.\driver_tmp_1.s
+60 cinit CODE >5546:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsqvc.\driver_tmp_1.s
+61 cinit CODE >5547:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsqvc.\driver_tmp_1.s
+62 cinit CODE >5548:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsqvc.\driver_tmp_1.s
+63 cinit CODE >5549:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsqvc.\driver_tmp_1.s
+66 cinit CODE >5553:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsqvc.\driver_tmp_1.s
+67 cinit CODE >5554:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsqvc.\driver_tmp_1.s
+68 cinit CODE >5555:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsqvc.\driver_tmp_1.s
+69 cinit CODE >5556:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsqvc.\driver_tmp_1.s
+6A cinit CODE >5557:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsqvc.\driver_tmp_1.s
+6B cinit CODE >5558:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsqvc.\driver_tmp_1.s
+6C cinit CODE >5559:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsqvc.\driver_tmp_1.s
+6D cinit CODE >5560:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsqvc.\driver_tmp_1.s
+6E cinit CODE >5561:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsqvc.\driver_tmp_1.s
+6F cinit CODE >5565:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsqvc.\driver_tmp_1.s
+70 cinit CODE >5566:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsqvc.\driver_tmp_1.s
+71 cinit CODE >5567:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsqvc.\driver_tmp_1.s
+72 cinit CODE >5568:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsqvc.\driver_tmp_1.s
+73 cinit CODE >5569:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsqvc.\driver_tmp_1.s
+74 cinit CODE >5570:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsqvc.\driver_tmp_1.s
+75 cinit CODE >5571:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsqvc.\driver_tmp_1.s
+76 cinit CODE >5572:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsqvc.\driver_tmp_1.s
+77 cinit CODE >5573:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsqvc.\driver_tmp_1.s
+7A cinit CODE >5577:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsqvc.\driver_tmp_1.s
+7B cinit CODE >5578:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsqvc.\driver_tmp_1.s
+7C cinit CODE >5579:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsqvc.\driver_tmp_1.s
+7D cinit CODE >5580:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsqvc.\driver_tmp_1.s
+7E cinit CODE >5581:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsqvc.\driver_tmp_1.s
+7F cinit CODE >5582:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsqvc.\driver_tmp_1.s
+80 cinit CODE >5583:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsqvc.\driver_tmp_1.s
+81 cinit CODE >5584:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsqvc.\driver_tmp_1.s
+82 cinit CODE >5585:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsqvc.\driver_tmp_1.s
+84 cinit CODE >5591:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsqvc.\driver_tmp_1.s
+84 cinit CODE >5593:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsqvc.\driver_tmp_1.s
+85 cinit CODE >5594:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsqvc.\driver_tmp_1.s
+86 cinit CODE >5595:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsqvc.\driver_tmp_1.s
 4 intentry CODE >52:D:\Personal\at-usb-keyboard\AT2USB\at2usbClassic.X\mcc_generated_files/interrupt_manager.c
 6 intentry CODE >55:D:\Personal\at-usb-keyboard\AT2USB\at2usbClassic.X\mcc_generated_files/interrupt_manager.c
 9 intentry CODE >57:D:\Personal\at-usb-keyboard\AT2USB\at2usbClassic.X\mcc_generated_files/interrupt_manager.c
@@ -1660,20 +1660,20 @@ F4C text5 CODE >375:D:\Personal\at-usb-keyboard\AT2USB\at2usbClassic.X\usb/usb_d
 868 maintext CODE >45:D:\Personal\at-usb-keyboard\AT2USB\at2usbClassic.X\main.c
 873 maintext CODE >46:D:\Personal\at-usb-keyboard\AT2USB\at2usbClassic.X\main.c
 879 maintext CODE >48:D:\Personal\at-usb-keyboard\AT2USB\at2usbClassic.X\main.c
-1F49 clrtext CODE >5512:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsu1g.\driver_tmp_1.s
-1F49 clrtext CODE >5513:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsu1g.\driver_tmp_1.s
-1F4A clrtext CODE >5514:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsu1g.\driver_tmp_1.s
-1F4A clrtext CODE >5515:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsu1g.\driver_tmp_1.s
-1F4B clrtext CODE >5516:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsu1g.\driver_tmp_1.s
-1F4C clrtext CODE >5517:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsu1g.\driver_tmp_1.s
-1F4D clrtext CODE >5518:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsu1g.\driver_tmp_1.s
-1F4E clrtext CODE >5519:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsu1g.\driver_tmp_1.s
-1F4F clrtext CODE >5520:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsu1g.\driver_tmp_1.s
-1F50 clrtext CODE >5521:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsu1g.\driver_tmp_1.s
-1F51 clrtext CODE >5522:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsu1g.\driver_tmp_1.s
-1F52 clrtext CODE >5523:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsu1g.\driver_tmp_1.s
-1F53 clrtext CODE >5525:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsu1g.\driver_tmp_1.s
-1F54 clrtext CODE >5524:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsu1g.\driver_tmp_1.s
+1F49 clrtext CODE >5512:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsqvc.\driver_tmp_1.s
+1F49 clrtext CODE >5513:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsqvc.\driver_tmp_1.s
+1F4A clrtext CODE >5514:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsqvc.\driver_tmp_1.s
+1F4A clrtext CODE >5515:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsqvc.\driver_tmp_1.s
+1F4B clrtext CODE >5516:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsqvc.\driver_tmp_1.s
+1F4C clrtext CODE >5517:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsqvc.\driver_tmp_1.s
+1F4D clrtext CODE >5518:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsqvc.\driver_tmp_1.s
+1F4E clrtext CODE >5519:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsqvc.\driver_tmp_1.s
+1F4F clrtext CODE >5520:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsqvc.\driver_tmp_1.s
+1F50 clrtext CODE >5521:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsqvc.\driver_tmp_1.s
+1F51 clrtext CODE >5522:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsqvc.\driver_tmp_1.s
+1F52 clrtext CODE >5523:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsqvc.\driver_tmp_1.s
+1F53 clrtext CODE >5525:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsqvc.\driver_tmp_1.s
+1F54 clrtext CODE >5524:C:\Users\BOJANS~1\AppData\Local\Temp\xcAsqvc.\driver_tmp_1.s
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -1735,13 +1735,13 @@ _UEP0 E98 0 ABS 0 - dist/default/production\at2usbClassic.X.production.o
 _UEP1 E99 0 ABS 0 - dist/default/production\at2usbClassic.X.production.o
 _WPUA 20C 0 ABS 0 - dist/default/production\at2usbClassic.X.production.o
 _WPUB 20D 0 ABS 0 - dist/default/production\at2usbClassic.X.production.o
-___sp 0 0 STACK 2 stack C:\Users\BOJANS~1\AppData\Local\Temp\xcAsu1g.\driver_tmp_12.o
+___sp 0 0 STACK 2 stack C:\Users\BOJANS~1\AppData\Local\Temp\xcAsqvc.\driver_tmp_12.o
 _main 102E 0 CODE 0 maintext dist/default/production\at2usbClassic.X.production.o
 _pDst 15F 0 BANK2 1 bssBANK2 dist/default/production\at2usbClassic.X.production.o
 btemp 7E 0 ABS 0 - dist/default/production\at2usbClassic.X.production.o
-___stack_hi 0 0 STACK 2 stack C:\Users\BOJANS~1\AppData\Local\Temp\xcAsu1g.\driver_tmp_12.o
-___stack_lo 0 0 STACK 2 stack C:\Users\BOJANS~1\AppData\Local\Temp\xcAsu1g.\driver_tmp_12.o
-start 7A 0 CODE 0 init C:\Users\BOJANS~1\AppData\Local\Temp\xcAsu1g.\driver_tmp_12.o
+___stack_hi 0 0 STACK 2 stack C:\Users\BOJANS~1\AppData\Local\Temp\xcAsqvc.\driver_tmp_12.o
+___stack_lo 0 0 STACK 2 stack C:\Users\BOJANS~1\AppData\Local\Temp\xcAsqvc.\driver_tmp_12.o
+start 7A 0 CODE 0 init C:\Users\BOJANS~1\AppData\Local\Temp\xcAsqvc.\driver_tmp_12.o
 __end_of_USBCheckHIDRequest 18E0 0 CODE 0 text65 dist/default/production\at2usbClassic.X.production.o
 _EUSART_Write 258C 0 CODE 0 text27 dist/default/production\at2usbClassic.X.production.o
 _USBTransferOnePacket 19E0 0 CODE 0 text30 dist/default/production\at2usbClassic.X.production.o
@@ -1776,12 +1776,12 @@ __end_of_IOCAF5_DefaultInterruptHandler 8 0 CODE 0 text86 dist/default/productio
 PS2Keyboard_ClockInterrupt@bit 7D 0 COMMON 1 cstackCOMMON dist/default/production\at2usbClassic.X.production.o
 _PS2Keyboard_SendCommand 2362 0 CODE 0 text46 dist/default/production\at2usbClassic.X.production.o
 _keyboardData 14F 0 BANK2 1 bssBANK2 dist/default/production\at2usbClassic.X.production.o
-intlevel0 0 0 ENTRY 0 functab C:\Users\BOJANS~1\AppData\Local\Temp\xcAsu1g.\driver_tmp_12.o
-intlevel1 0 0 ENTRY 0 functab C:\Users\BOJANS~1\AppData\Local\Temp\xcAsu1g.\driver_tmp_12.o
-intlevel2 0 0 ENTRY 0 functab C:\Users\BOJANS~1\AppData\Local\Temp\xcAsu1g.\driver_tmp_12.o
-intlevel3 0 0 ENTRY 0 functab C:\Users\BOJANS~1\AppData\Local\Temp\xcAsu1g.\driver_tmp_12.o
-intlevel4 0 0 ENTRY 0 functab C:\Users\BOJANS~1\AppData\Local\Temp\xcAsu1g.\driver_tmp_12.o
-intlevel5 0 0 ENTRY 0 functab C:\Users\BOJANS~1\AppData\Local\Temp\xcAsu1g.\driver_tmp_12.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\BOJANS~1\AppData\Local\Temp\xcAsqvc.\driver_tmp_12.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\BOJANS~1\AppData\Local\Temp\xcAsqvc.\driver_tmp_12.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\BOJANS~1\AppData\Local\Temp\xcAsqvc.\driver_tmp_12.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\BOJANS~1\AppData\Local\Temp\xcAsqvc.\driver_tmp_12.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\BOJANS~1\AppData\Local\Temp\xcAsqvc.\driver_tmp_12.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\BOJANS~1\AppData\Local\Temp\xcAsqvc.\driver_tmp_12.o
 __ptext100 3D48 0 CODE 0 text100 dist/default/production\at2usbClassic.X.production.o
 __ptext101 3D4A 0 CODE 0 text101 dist/default/production\at2usbClassic.X.production.o
 __ptext102 21C4 0 CODE 0 text102 dist/default/production\at2usbClassic.X.production.o
@@ -1869,8 +1869,8 @@ GenericQueue_CopyToArray@count C8 0 BANK1 1 cstackBANK1 dist/default/production\
 GenericQueue_CopyToArray@index C7 0 BANK1 1 cstackBANK1 dist/default/production\at2usbClassic.X.production.o
 USBCtrlTrfRxService@byteToRead 79 0 COMMON 1 cstackCOMMON dist/default/production\at2usbClassic.X.production.o
 Log_Message@i AD 0 BANK1 1 cstackBANK1 dist/default/production\at2usbClassic.X.production.o
-___stackhi 0 0 ABS 0 - C:\Users\BOJANS~1\AppData\Local\Temp\xcAsu1g.\driver_tmp_12.o
-___stacklo 0 0 ABS 0 - C:\Users\BOJANS~1\AppData\Local\Temp\xcAsu1g.\driver_tmp_12.o
+___stackhi 0 0 ABS 0 - C:\Users\BOJANS~1\AppData\Local\Temp\xcAsqvc.\driver_tmp_12.o
+___stacklo 0 0 ABS 0 - C:\Users\BOJANS~1\AppData\Local\Temp\xcAsqvc.\driver_tmp_12.o
 __end_of_USBCtrlTrfOutHandler 286A 0 CODE 0 text73 dist/default/production\at2usbClassic.X.production.o
 _EUSART_Initialize F7C 0 CODE 0 text11 dist/default/production\at2usbClassic.X.production.o
 APP_KeyboardUpdateState@usbHidCode_2928 CE 0 BANK1 1 cstackBANK1 dist/default/production\at2usbClassic.X.production.o
@@ -1938,7 +1938,7 @@ __end_of_USBEnableEndpoint 24C8 0 CODE 0 text71 dist/default/production\at2usbCl
 _WDTCON 97 0 ABS 0 - dist/default/production\at2usbClassic.X.production.o
 i1___wmul@multiplicand 72 0 COMMON 1 cstackCOMMON dist/default/production\at2usbClassic.X.production.o
 _EUSART_TxDefaultInterruptHandler 148 0 BANK2 1 bssBANK2 dist/default/production\at2usbClassic.X.production.o
-___int_sp 0 0 STACK 2 stack C:\Users\BOJANS~1\AppData\Local\Temp\xcAsu1g.\driver_tmp_12.o
+___int_sp 0 0 STACK 2 stack C:\Users\BOJANS~1\AppData\Local\Temp\xcAsqvc.\driver_tmp_12.o
 _UIEbits E92 0 ABS 0 - dist/default/production\at2usbClassic.X.production.o
 i1___wmul 228A 0 CODE 0 text93 dist/default/production\at2usbClassic.X.production.o
 _UIRbits E90 0 ABS 0 - dist/default/production\at2usbClassic.X.production.o
@@ -2180,7 +2180,7 @@ __Lintentry 8 0 CODE 0 intentry -
 __end_of_USBCtrlTrfSetupHandler 2B96 0 CODE 0 text55 dist/default/production\at2usbClassic.X.production.o
 __end_ofi1_memcpy 2668 0 CODE 0 text92 dist/default/production\at2usbClassic.X.production.o
 __end_ofi1_memset 2198 0 CODE 0 text60 dist/default/production\at2usbClassic.X.production.o
-reset_vec 0 0 CODE 0 reset_vec C:\Users\BOJANS~1\AppData\Local\Temp\xcAsu1g.\driver_tmp_12.o
+reset_vec 0 0 CODE 0 reset_vec C:\Users\BOJANS~1\AppData\Local\Temp\xcAsqvc.\driver_tmp_12.o
 _PS2Keyboard_ClockInterrupt A04 0 CODE 0 text90 dist/default/production\at2usbClassic.X.production.o
 _USBEnableEndpoint 2488 0 CODE 0 text71 dist/default/production\at2usbClassic.X.production.o
 __pdataBANK3 1C7 0 BANK3 1 dataBANK3 dist/default/production\at2usbClassic.X.production.o
@@ -2473,8 +2473,8 @@ __Hstringtext9 0 0 ABS 0 stringtext9 -
 _ps2ExtUsbMap 806 0 STRCODE 0 stringtext1 dist/default/production\at2usbClassic.X.production.o
 ?i1___awmod 70 0 COMMON 1 cstackCOMMON dist/default/production\at2usbClassic.X.production.o
 _eusartRxStatusBuffer 1A8 0 BANK3 1 bssBANK3 dist/default/production\at2usbClassic.X.production.o
-___heap_hi 0 0 ABS 0 - C:\Users\BOJANS~1\AppData\Local\Temp\xcAsu1g.\driver_tmp_12.o
-___heap_lo 0 0 ABS 0 - C:\Users\BOJANS~1\AppData\Local\Temp\xcAsu1g.\driver_tmp_12.o
+___heap_hi 0 0 ABS 0 - C:\Users\BOJANS~1\AppData\Local\Temp\xcAsqvc.\driver_tmp_12.o
+___heap_lo 0 0 ABS 0 - C:\Users\BOJANS~1\AppData\Local\Temp\xcAsqvc.\driver_tmp_12.o
 _GenericQueue_Remove BEE 0 CODE 0 text36 dist/default/production\at2usbClassic.X.production.o
 _USBStdSetCfgHandler 1440 0 CODE 0 text59 dist/default/production\at2usbClassic.X.production.o
 EUSART_Write@txData A9 0 BANK1 1 cstackBANK1 dist/default/production\at2usbClassic.X.production.o
@@ -2568,8 +2568,8 @@ _eusartTxTail 163 0 BANK2 1 bssBANK2 dist/default/production\at2usbClassic.X.pro
 i1___awmod@counter 75 0 COMMON 1 cstackCOMMON dist/default/production\at2usbClassic.X.production.o
 _USBStatusStageEnabledFlag1 158 0 BANK2 1 bssBANK2 dist/default/production\at2usbClassic.X.production.o
 _USBStatusStageEnabledFlag2 157 0 BANK2 1 bssBANK2 dist/default/production\at2usbClassic.X.production.o
-___int_stack_hi 0 0 STACK 2 stack C:\Users\BOJANS~1\AppData\Local\Temp\xcAsu1g.\driver_tmp_12.o
-___int_stack_lo 0 0 STACK 2 stack C:\Users\BOJANS~1\AppData\Local\Temp\xcAsu1g.\driver_tmp_12.o
+___int_stack_hi 0 0 STACK 2 stack C:\Users\BOJANS~1\AppData\Local\Temp\xcAsqvc.\driver_tmp_12.o
+___int_stack_lo 0 0 STACK 2 stack C:\Users\BOJANS~1\AppData\Local\Temp\xcAsqvc.\driver_tmp_12.o
 __end_of_EUSART_SetRxInterruptHandler 3DF2 0 CODE 0 text13 dist/default/production\at2usbClassic.X.production.o
 _OSCILLATOR_Initialize 3F12 0 CODE 0 text10 dist/default/production\at2usbClassic.X.production.o
 PS2Keyboard_ClockInterrupt@bitPos 7C 0 COMMON 1 cstackCOMMON dist/default/production\at2usbClassic.X.production.o

@@ -1,7 +1,7 @@
 
 
 Microchip MPLAB XC8 Assembler V2.46 build 20240104201356 
-                                                                                               Tue May 07 12:13:58 2024
+                                                                                               Mon May 20 23:41:38 2024
 
 Microchip MPLAB XC8 C Compiler v2.46 (Free license) build 20240104201356 Og9 
      1                           	processor	16F1459
@@ -5554,8 +5554,8 @@ Microchip MPLAB XC8 C Compiler v2.46 (Free license) build 20240104201356 Og9
   5471     07D1  0023               	movlb	3	; select bank3
   5472     07D2  009F               	movwf	31	;volatile
   5473                           
-  5474                           ;mcc_generated_files/eusart.c: 101:     RCSTA = 0x90;
-  5475     07D3  3090               	movlw	144
+  5474                           ;mcc_generated_files/eusart.c: 101:     RCSTA = 0x80;
+  5475     07D3  3080               	movlw	128
   5476     07D4  009D               	movwf	29	;volatile
   5477                           
   5478                           ;mcc_generated_files/eusart.c: 104:     TXSTA = 0x24;
@@ -18765,7 +18765,7 @@ SFR31                0      0       0      32        0.0%
 
 
 Microchip Technology PIC Macro Assembler V2.46 build 20240104201356 
-Symbol Table                                                                                   Tue May 07 12:13:58 2024
+Symbol Table                                                                                   Mon May 20 23:41:38 2024
 
                 ?_EUSART_SetRxInterruptHandler 00A8               __end_of_TMR2_SetInterruptHandler 1F09  
                                    _USB_SD_Ptr 18CA                                 ___bmul@product 00AA  
