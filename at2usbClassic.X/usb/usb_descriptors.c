@@ -116,9 +116,9 @@ sizeof(sd001),USB_DESCRIPTOR_STRING,
 }};
 
 //Product string descriptor
-const struct{uint8_t bLength;uint8_t bDscType;uint16_t string[13];}sd002={
+const struct{uint8_t bLength;uint8_t bDscType;uint16_t string[6];}sd002={
 sizeof(sd002),USB_DESCRIPTOR_STRING,
-{'K','e','y','b','o','a','r','d',' ','D','e','m','o'
+{'A','T','2','U','S','B'
 }};
 
 //Array of configuration descriptors

@@ -2384,7 +2384,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="System Module" registerAlias="CONFIG1"/>
-         <value>16100</value>
+         <value>14564</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="System Module" registerAlias="CONFIG2"/>
@@ -2392,7 +2392,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="System Module" registerAlias="CONFIG1" settingAlias="BOREN"/>
-         <value>ON</value>
+         <value>OFF</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="System Module" registerAlias="CONFIG1" settingAlias="CLKOUTEN"/>
@@ -2750,7 +2750,7 @@
       </entry>
       <entry>
          <file>mcc_generated_files\device_config.c</file>
-         <hash>01629246d78dfe0716a66bbd3c174453a47252b1db3e062f9c763bcd7d5ce899</hash>
+         <hash>92e4b8c718a82e4160e5e6dd4ee64a3d45b14d079a494b9f71284b3206f0e33e</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\device_config.h</file>

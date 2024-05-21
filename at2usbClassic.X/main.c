@@ -12,7 +12,8 @@ int main(void) {
     SYSTEM_Initialize();
     SysTime_Init();
     PS2Keyboard_Init();
-
+    
+    __delay_ms(1000);
 
     // If using interrupts in PIC18 High/Low Priority Mode you need to enable the Global High and Low Interrupts 
     // If using interrupts in PIC Mid-Range Compatibility Mode you need to enable the Global and Peripheral Interrupts 
