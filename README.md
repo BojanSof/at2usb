@@ -2,6 +2,8 @@
 
 PIC16F1459 solution for converting old AT (PS/2) keyboard to USB.
 
+![AT keyboard transformed to USB](./images/keyboard.jpg)
+
 ## Hardware
 
 Schematic and one layer PCB can be found under `hardware` directory.
